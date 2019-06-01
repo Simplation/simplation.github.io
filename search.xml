@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[关于 HEXO 的一些常用命令]]></title>
     <url>%2F2019%2F05%2F28%2F%E5%85%B3%E4%BA%8E%20hexo%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[由于电脑系统重装，之前的内容没有备份, 从2017年到2019年的内容都不复存在。不过目前已经重新将架子搭起来，准备继续搞起来！！！欢迎来到[Hexo]（https://hexo.io/）！ 这是你的第一篇文章。 有关详细信息，请查看[文档]（https://hexo.io/docs/）。 如果您在使用Hexo时遇到任何问题，可以在[故障排除]（https://hexo.io/docs/troubleshooting.html）中找到答案，或者您可以在[GitHub]（https://github.com）上找到我。/ hexojs/ HEXO/问题）。 ＃＃ 快速开始 ###创建一个新帖子 1$ hexo new“我的新帖子” 更多信息：[写作]（https://hexo.io/docs/writing.html） ###运行服务器 1$ hexo服务器 更多信息：[服务器]（https://hexo.io/docs/server.html） ###生成静态文件 1$ hexo生成 更多信息：[Generating]（https://hexo.io/docs/generating.html） ###部署到远程站点 1$ hexo deploy 更多信息：[部署]（https://hexo.io/docs/deployment.html）]]></content>
       <tags>
         <tag>hexo 的操作</tag>
       </tags>
