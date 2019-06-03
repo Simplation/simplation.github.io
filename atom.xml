@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-01T15:51:15.007Z</updated>
+  <updated>2019-06-03T13:10:35.900Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>获取 AndroidStudio 的 Share1 值</title>
+    <link href="http://yoursite.com/2019/06/03/%E8%8E%B7%E5%8F%96%20AndroidStudio%20%E7%9A%84%20Share1%20%E5%80%BC/"/>
+    <id>http://yoursite.com/2019/06/03/获取 AndroidStudio 的 Share1 值/</id>
+    <published>2019-06-03T12:45:33.000Z</published>
+    <updated>2019-06-03T13:10:35.900Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个周末没事，准备做个BaiduMap比较全面的Demo，之前使用Ecplise比较方便，直接复制粘贴就行。但是AndroidStudio获取比较麻烦，刚开始我是一头雾水，不过最终还是研究出来了，记录一下，希望避过我踩过的坑。</p><p>步骤：</p><ul><li>1、打开AndroidStudio的Terminal。</li></ul><p><img src="/images/%E6%89%93%E5%BC%80Terional.png" alt="avatar"></p><ul><li>2、输入keytool -list -keystore D:\Soft\JDK1.8\MyJks.jks        这里需要注意的是：必须是在你存放的JKS文件路径才可以。</li></ul><p><img src="/images/%E8%BE%93%E5%85%A5%E6%8C%87%E4%BB%A4.png" alt="avatar"></p><ul><li>3、输入口令，正确之后就可以看到Share1的值</li></ul><p>![avatar](/images/显示Share1值﻿.png)</p><p>到这里，Share1的值就获取到了，直接复制使用就OK。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这个周末没事，准备做个BaiduMap比较全面的Demo，之前使用Ecplise比较方便，直接复制粘贴就行。但是AndroidStudio获取比较麻烦，刚开始我是一头雾水，不过最终还是研究出来了，记录一下，希望避过我踩过的坑。&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li
+      
+    
+    </summary>
+    
+    
+      <category term="AndroidStudio" scheme="http://yoursite.com/tags/AndroidStudio/"/>
+    
+      <category term="Share1值" scheme="http://yoursite.com/tags/Share1%E5%80%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>关于 HEXO 的一些常用命令</title>

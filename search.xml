@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[获取 AndroidStudio 的 Share1 值]]></title>
+    <url>%2F2019%2F06%2F03%2F%E8%8E%B7%E5%8F%96%20AndroidStudio%20%E7%9A%84%20Share1%20%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[这个周末没事，准备做个BaiduMap比较全面的Demo，之前使用Ecplise比较方便，直接复制粘贴就行。但是AndroidStudio获取比较麻烦，刚开始我是一头雾水，不过最终还是研究出来了，记录一下，希望避过我踩过的坑。 步骤： 1、打开AndroidStudio的Terminal。 2、输入keytool -list -keystore D:\Soft\JDK1.8\MyJks.jks 这里需要注意的是：必须是在你存放的JKS文件路径才可以。 3、输入口令，正确之后就可以看到Share1的值 ![avatar](/images/显示Share1值 .png) 到这里，Share1的值就获取到了，直接复制使用就OK。]]></content>
+      <tags>
+        <tag>AndroidStudio</tag>
+        <tag>Share1值</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于 HEXO 的一些常用命令]]></title>
     <url>%2F2019%2F05%2F28%2F%E5%85%B3%E4%BA%8E%20hexo%20%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[由于电脑系统重装，之前的内容没有备份, 从2017年到2019年的内容都不复存在。不过目前已经重新将架子搭起来，准备继续搞起来！！！欢迎来到[Hexo]（https://hexo.io/）！ 这是你的第一篇文章。 有关详细信息，请查看[文档]（https://hexo.io/docs/）。 如果您在使用Hexo时遇到任何问题，可以在[故障排除]（https://hexo.io/docs/troubleshooting.html）中找到答案，或者您可以在[GitHub]（https://github.com）上找到我。/ hexojs/ HEXO/问题）。 ＃＃ 快速开始 ###创建一个新帖子 1$ hexo new“我的新帖子” 更多信息：[写作]（https://hexo.io/docs/writing.html） ###运行服务器 1$ hexo服务器 更多信息：[服务器]（https://hexo.io/docs/server.html） ###生成静态文件 1$ hexo生成 更多信息：[Generating]（https://hexo.io/docs/generating.html） ###部署到远程站点 1$ hexo deploy 更多信息：[部署]（https://hexo.io/docs/deployment.html）]]></content>
