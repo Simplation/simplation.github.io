@@ -2,6 +2,14 @@
 <search>
   <entry>
     <title><![CDATA[Python的软件包工具-Pip]]></title>
+    <url>%2F2019%2F06%2F05%2FPython%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-Pip%2F</url>
+    <content type="text"><![CDATA[Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下 Pip 的用法。 安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块 1、安装包管理工具 - pip ​ sudo easy-install pip 2、升级包管理工具的版本 ​ Linux 或 Mac OS 上： ​ pip install -U pip ​ Windows 上： ​ python -m pip install -U pip 3、使用包管理工具安装第三方的模块 ​ 举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：pip3 install PyMySQL 4、使用包管理工具卸载模块 使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。]]></content>
+      <tags>
+        <tag>Pip包管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python的软件包工具-Pip]]></title>
     <url>%2F2019%2F06%2F05%2FPython%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-PyPA%2F</url>
     <content type="text"><![CDATA[Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下 Pip 的用法。 安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块 1、安装包管理工具 - pip ​ sudo easy-install pip 2、升级包管理工具的版本 ​ Linux 或 Mac OS 上： ​ pip install -U pip ​ Windows 上： ​ python -m pip install -U pip 3、使用包管理工具安装第三方的模块 ​ 举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：pip3 install PyMySQL 4、使用包管理工具卸载模块 使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。]]></content>
       <tags>
@@ -14,14 +22,6 @@
     <content type="text"><![CDATA[本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。 Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin. 导入Eclipse项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject. 使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1) 查看SHAR1值的方法 Could not find com.android.tools.build:aapt2:3.2.1-4818971. AAPT2 error: check logs for details java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace” java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’ 给项目添加 Android 10 的网络权限。 1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin. 解决办法：gradle 配置，这里的配置中 instrumentTest 已被弃用，不适用于现在的 gradle 版本。用 androidTest 替换 instrumentTest，编译运行即可。 2.导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject. 解决办法：修改自己本地安装的 gradle 版本号，然后重新编译执行。 3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1) 解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现 正确写法： @FormUrlEncoded @POST(forgetpwd) Observable&lt;ResponseBody&gt; forget(@FieldMap Map&lt;String, String&gt; map); 4.查看SHAR1值的办法。 解决办法： (1).把apk的格式改为压缩文件，进行解压。 (2).在解压出来的文件中获取META-INF文件夹下的CERT.RSA文件。 (3).打开cmd Keytool –printcert –file 后面接文件的路径。 5.Could not find com.android.tools.build:aapt2:3.2.1-4818971. 解决方法：在项目的build.gradle文件中，新增一行google()即可解决 allprojects { repositories { jcenter() google()//新增这一行 } } 6.AAPT2 error: check logs for details 解决办法：构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。查看log具体输出原因 7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace” 解决办法：根据错误提示，缺少对应的so文件，需要ctrl+shift+n找到so，并拷贝到jniLibs文件夹下，注意对应的文件位置。重新rebuild即可。 8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’ 解决办法： 1.检查关键字是否错误，keep class 等 2.检查包名是否拼写错误 3.检查是否有中文字符，比如括号，点，空格，空格，空格 9.给项目添加 Android 10 的网络权限。解决办法： 1.将如下代码，添加到xml文件中 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;network-security-config&gt; &lt;base-config cleartextTrafficPermitted=&quot;true&quot; /&gt; &lt;/network-security-config&gt; 2.在application中引用xml文件即可。]]></content>
       <tags>
         <tag>Android问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Python的软件包工具-Pip]]></title>
-    <url>%2F2019%2F06%2F04%2FPython%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-Pip%2F</url>
-    <content type="text"><![CDATA[Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下 Pip 的用法。 安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块 1、安装包管理工具 - pip ​ sudo easy-install pip 2、升级包管理工具的版本 ​ Linux 或 Mac OS 上： ​ pip install -U pip ​ Windows 上： ​ python -m pip install -U pip 3、使用包管理工具安装第三方的模块 ​ 举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：pip3 install PyMySQL 4、使用包管理工具卸载模块 使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。]]></content>
-      <tags>
-        <tag>Pip包管理</tag>
       </tags>
   </entry>
   <entry>

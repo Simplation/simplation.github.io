@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-05T13:13:47.181Z</updated>
+  <updated>2019-06-05T13:22:29.505Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python的软件包工具-Pip</title>
+    <link href="http://yoursite.com/2019/06/05/Python%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-Pip/"/>
+    <id>http://yoursite.com/2019/06/05/Python的软件包工具-Pip/</id>
+    <published>2019-06-05T12:16:04.000Z</published>
+    <updated>2019-06-05T13:22:29.505Z</updated>
+    
+    <content type="html"><![CDATA[<p>Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。</p><ol><li>安装包管理工具</li><li>升级包管理工具</li><li>安装第三方的模块</li><li>卸载第三方的模块</li></ol><p>1、安装包管理工具 - pip</p><p>​      <code>sudo easy-install pip</code></p><p>2、升级包管理工具的版本</p><p>​      Linux 或 Mac OS 上：</p><p>​           <code>pip install -U pip</code></p><p>​      Windows 上：</p><p>​           <code>python -m pip install -U pip</code></p><p>3、使用包管理工具安装第三方的模块</p><p>​        举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：<br><code>pip3 install PyMySQL</code></p><p><img src="/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png" alt="演示安装PyMySQL"></p><p>4、使用包管理工具卸载模块</p><p>使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。</p><p><img src="/images/%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97.png" alt="卸载模块"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装包管理工具&lt;/li&gt;
+&lt;li&gt;升级包管理工具&lt;/li&gt;
+&lt;li&gt;安装第三方的模块&lt;/li&gt;
+&lt;li&gt;卸载第三方的模块&lt;/li&gt;
+&lt;/ol&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Pip包管理" scheme="http://yoursite.com/tags/Pip%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Python的软件包工具-Pip</title>
@@ -68,36 +98,6 @@
     
     
       <category term="Android问题" scheme="http://yoursite.com/tags/Android%E9%97%AE%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python的软件包工具-Pip</title>
-    <link href="http://yoursite.com/2019/06/04/Python%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-Pip/"/>
-    <id>http://yoursite.com/2019/06/04/Python的软件包工具-Pip/</id>
-    <published>2019-06-04T11:47:04.000Z</published>
-    <updated>2019-06-05T13:01:34.107Z</updated>
-    
-    <content type="html"><![CDATA[<p>Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。</p><ol><li>安装包管理工具</li><li>升级包管理工具</li><li>安装第三方的模块</li><li>卸载第三方的模块</li></ol><p>1、安装包管理工具 - pip</p><p>​      <code>sudo easy-install pip</code></p><p>2、升级包管理工具的版本</p><p>​      Linux 或 Mac OS 上：</p><p>​           <code>pip install -U pip</code></p><p>​      Windows 上：</p><p>​           <code>python -m pip install -U pip</code></p><p>3、使用包管理工具安装第三方的模块</p><p>​        举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：<br><code>pip3 install PyMySQL</code></p><p><img src="/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png" alt="演示安装PyMySQL"></p><p>4、使用包管理工具卸载模块</p><p>使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。</p><p><img src="/images/%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97.png" alt="卸载模块"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;安装包管理工具&lt;/li&gt;
-&lt;li&gt;升级包管理工具&lt;/li&gt;
-&lt;li&gt;安装第三方的模块&lt;/li&gt;
-&lt;li&gt;卸载第三方的模块&lt;/li&gt;
-&lt;/ol&gt;
-&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="Pip包管理" scheme="http://yoursite.com/tags/Pip%E5%8C%85%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
