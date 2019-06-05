@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-04T12:51:31.433Z</updated>
+  <updated>2019-06-04T14:20:17.341Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/06/04/Android%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     <id>http://yoursite.com/2019/06/04/Android常见问题汇总/</id>
     <published>2019-06-04T11:47:04.000Z</published>
-    <updated>2019-06-04T12:51:31.433Z</updated>
+    <updated>2019-06-04T14:20:17.341Z</updated>
     
-    <content type="html"><![CDATA[<p>本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。</p><ol><li><p>Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</p></li><li><p>导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</p></li><li><p>使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</p></li><li><p>查看SHAR1值的方法</p></li><li><p>Could not find com.android.tools.build:aapt2:3.2.1-4818971.</p></li><li><p>AAPT2 error: check logs for details</p></li><li><p>java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</p></li><li><p>java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</p></li><li><p>给项目添加 Android 10 的网络权限。</p></li></ol><hr><p><strong>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</strong></p><p>解决办法：gradle 配置，这里的配置中 instrumentTest 已被弃用，不适用于现在的 gradle 版本。用 androidTest 替换 instrumentTest，编译运行即可。</p><p><strong>2.导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</strong></p><p>解决办法：修改自己本地安装的 gradle 版本号，然后重新编译执行。</p><p><strong>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</strong></p><p>解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现<br>    正确写法：<br>    (<code>)        @FormUrlEncoded        @POST(forgetpwd)        Observable&lt;ResponseBody&gt; forget(@FieldMap Map&lt;String, String&gt; map);    (</code>)</p><p><strong>4.查看SHAR1值的办法。</strong></p><p>解决办法：<br>    (1).把apk的格式改为压缩文件，进行解压。<br>    (2).在解压出来的文件中获取META-INF文件夹下的CERT.RSA文件。<br>    (3).打开cmd Keytool –printcert –file 后面接文件的路径。 </p><p><strong>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</strong></p><p>解决方法：在项目的build.gradle文件中，新增一行google()即可解决<br>    (<code>)    allprojects {        repositories {            jcenter()            google()//新增这一行        }    }    (</code>)</p><p><strong>6.AAPT2 error: check logs for details</strong></p><p>解决办法：构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。查看log具体输出原因</p><p><strong>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</strong></p><p>解决办法：根据错误提示，缺少对应的so文件，需要ctrl+shift+n找到so，并拷贝到jniLibs文件夹下，注意对应的文件位置。重新rebuild即可。</p><p><strong>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</strong></p><p>解决办法：<br>    1.检查关键字是否错误，keep class 等<br>    2.检查包名是否拼写错误<br>    3.检查是否有中文字符，比如括号，点，空格，空格，空格</p><p><strong>9.给项目添加 Android 10 的网络权限。</strong><br>解决办法：<br>    1.将如下代码，添加到xml文件中<br>             (<code>)             &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;             &lt;network-security-config&gt;                &lt;base-config cleartextTrafficPermitted=&quot;true&quot; /&gt;             &lt;/network-security-config&gt;             (</code>)    2.在application中引用xml文件即可。</p>]]></content>
+    <content type="html"><![CDATA[<p>本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。</p><ol><li><p>Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</p></li><li><p>导入Eclipse项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</p></li><li><p>使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</p></li><li><p>查看SHAR1值的方法</p></li><li><p>Could not find com.android.tools.build:aapt2:3.2.1-4818971.</p></li><li><p>AAPT2 error: check logs for details</p></li><li><p>java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</p></li><li><p>java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</p></li><li><p>给项目添加 Android 10 的网络权限。</p></li></ol><hr><p><strong>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</strong></p><p>解决办法：gradle 配置，这里的配置中 instrumentTest 已被弃用，不适用于现在的 gradle 版本。用 androidTest 替换 instrumentTest，编译运行即可。</p><p><strong>2.导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</strong></p><p>解决办法：修改自己本地安装的 gradle 版本号，然后重新编译执行。</p><p><strong>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</strong></p><p>解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现<br>    正确写法：<br>    (<code>)        @FormUrlEncoded        @POST(forgetpwd)        Observable&lt;ResponseBody&gt; forget(@FieldMap Map&lt;String, String&gt; map);    (</code>)</p><p><strong>4.查看SHAR1值的办法。</strong></p><p>解决办法：<br>    (1).把apk的格式改为压缩文件，进行解压。<br>    (2).在解压出来的文件中获取META-INF文件夹下的CERT.RSA文件。<br>    (3).打开cmd Keytool –printcert –file 后面接文件的路径。 </p><p><strong>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</strong></p><p>解决方法：在项目的build.gradle文件中，新增一行google()即可解决<br>    (<code>)    allprojects {        repositories {            jcenter()            google()//新增这一行        }    }    (</code>)</p><p><strong>6.AAPT2 error: check logs for details</strong></p><p>解决办法：构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。查看log具体输出原因</p><p><strong>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</strong></p><p>解决办法：根据错误提示，缺少对应的so文件，需要ctrl+shift+n找到so，并拷贝到jniLibs文件夹下，注意对应的文件位置。重新rebuild即可。</p><p><strong>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</strong></p><p>解决办法：<br>    1.检查关键字是否错误，keep class 等<br>    2.检查包名是否拼写错误<br>    3.检查是否有中文字符，比如括号，点，空格，空格，空格</p><p><strong>9.给项目添加 Android 10 的网络权限。</strong><br>解决办法：<br>    1.将如下代码，添加到xml文件中<br>             (<code>)             &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;             &lt;network-security-config&gt;                &lt;base-config cleartextTrafficPermitted=&quot;true&quot; /&gt;             &lt;/network-security-config&gt;             (</code>)    2.在application中引用xml文件即可。</p>]]></content>
     
     <summary type="html">
     
@@ -42,13 +42,43 @@
   </entry>
   
   <entry>
+    <title>Python的软件包工具-Pip</title>
+    <link href="http://yoursite.com/2019/06/04/Python%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B7%A5%E5%85%B7-Pip/"/>
+    <id>http://yoursite.com/2019/06/04/Python的软件包工具-Pip/</id>
+    <published>2019-06-04T11:47:04.000Z</published>
+    <updated>2019-06-05T13:01:34.107Z</updated>
+    
+    <content type="html"><![CDATA[<p>Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。</p><ol><li>安装包管理工具</li><li>升级包管理工具</li><li>安装第三方的模块</li><li>卸载第三方的模块</li></ol><p>1、安装包管理工具 - pip</p><p>​      <code>sudo easy-install pip</code></p><p>2、升级包管理工具的版本</p><p>​      Linux 或 Mac OS 上：</p><p>​           <code>pip install -U pip</code></p><p>​      Windows 上：</p><p>​           <code>python -m pip install -U pip</code></p><p>3、使用包管理工具安装第三方的模块</p><p>​        举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：<br><code>pip3 install PyMySQL</code></p><p><img src="/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png" alt="演示安装PyMySQL"></p><p>4、使用包管理工具卸载模块</p><p>使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。</p><p><img src="/images/%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97.png" alt="卸载模块"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装包管理工具&lt;/li&gt;
+&lt;li&gt;升级包管理工具&lt;/li&gt;
+&lt;li&gt;安装第三方的模块&lt;/li&gt;
+&lt;li&gt;卸载第三方的模块&lt;/li&gt;
+&lt;/ol&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Pip包管理" scheme="http://yoursite.com/tags/Pip%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>获取 AndroidStudio 的 Share1 值</title>
     <link href="http://yoursite.com/2019/06/03/%E8%8E%B7%E5%8F%96%20AndroidStudio%20%E7%9A%84%20Share1%20%E5%80%BC/"/>
     <id>http://yoursite.com/2019/06/03/获取 AndroidStudio 的 Share1 值/</id>
     <published>2019-06-03T12:45:33.000Z</published>
-    <updated>2019-06-03T13:46:27.462Z</updated>
+    <updated>2019-06-05T13:00:29.165Z</updated>
     
-    <content type="html"><![CDATA[<p>这个周末没事，准备做个BaiduMap比较全面的Demo，之前使用Ecplise比较方便，直接复制粘贴就行。但是AndroidStudio获取比较麻烦，刚开始我是一头雾水，不过最终还是研究出来了，记录一下，希望避过我踩过的坑。</p><p>步骤：</p><ul><li>1、打开AndroidStudio的Terminal。</li></ul><p><img src="/images/%E6%89%93%E5%BC%80Terional.jpg" alt="avatar"></p><ul><li>2、输入keytool -list -keystore D:\Soft\JDK1.8\MyJks.jks        这里需要注意的是：必须是在你存放的JKS文件路径才可以。</li></ul><p><img src="/images/%E8%BE%93%E5%85%A5%E6%8C%87%E4%BB%A4.jpg" alt="avatar"></p><ul><li>3、输入口令，正确之后就可以看到Share1的值</li></ul><p>![avatar](/images/显示Share1值﻿.jpg)</p><p>到这里，Share1的值就获取到了，直接复制使用就OK。</p>]]></content>
+    <content type="html"><![CDATA[<p>这个周末没事，准备做个BaiduMap比较全面的Demo，之前使用Ecplise比较方便，直接复制粘贴就行。但是AndroidStudio获取比较麻烦，刚开始我是一头雾水，不过最终还是研究出来了，记录一下，希望避过我踩过的坑。</p><p>步骤：</p><ul><li>1、打开AndroidStudio的Terminal。</li></ul><p><img src="/images/%E6%89%93%E5%BC%80Terional.jpg" alt="打开Terional"></p><ul><li>2、输入keytool -list -keystore D:\Soft\JDK1.8\MyJks.jks        这里需要注意的是：必须是在你存放的JKS文件路径才可以。</li></ul><p><img src="/images/%E8%BE%93%E5%85%A5%E6%8C%87%E4%BB%A4.jpg" alt="输入指令"></p><ul><li>3、输入口令，正确之后就可以看到Share1的值</li></ul><p>![显示Share1值﻿](/images/显示Share1值﻿.jpg)</p><p>到这里，Share1的值就获取到了，直接复制使用就OK。</p>]]></content>
     
     <summary type="html">
     
