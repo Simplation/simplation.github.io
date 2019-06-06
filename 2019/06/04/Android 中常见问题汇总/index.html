@@ -118,18 +118,18 @@
 
 
 
-<meta name="description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.  导入Eclipse项目报错，Error:Could not determine the class-p">
+<meta name="description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin. 2.导入Eclipse项目报错，Error:Could not determine the clas">
 <meta name="keywords" content="Android问题,汇总">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 中常见问题汇总(附解决办法)">
 <meta property="og:url" content="http://yoursite.com/2019/06/04/Android 中常见问题汇总/index.html">
 <meta property="og:site_name" content="Simplation.WANG&#39;s Blogs">
-<meta property="og:description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.  导入Eclipse项目报错，Error:Could not determine the class-p">
+<meta property="og:description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin. 2.导入Eclipse项目报错，Error:Could not determine the clas">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-06T13:59:14.087Z">
+<meta property="og:updated_time" content="2019-06-06T14:21:41.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 中常见问题汇总(附解决办法)">
-<meta name="twitter:description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.  导入Eclipse项目报错，Error:Could not determine the class-p">
+<meta name="twitter:description" content="本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。  1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin. 2.导入Eclipse项目报错，Error:Could not determine the clas">
 
 
 
@@ -507,7 +507,7 @@ $(function() {
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  760
+                  769
                 </span>
               
 
@@ -545,54 +545,42 @@ $(function() {
 
       
         <p>本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。</p>
-<ol>
-<li><p>Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</p>
-</li>
-<li><p>导入Eclipse项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</p>
-</li>
-<li><p>使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</p>
-</li>
-<li><p>查看SHAR1值的方法</p>
-</li>
-<li><p>Could not find com.android.tools.build:aapt2:3.2.1-4818971.</p>
-</li>
-<li><p>AAPT2 error: check logs for details</p>
-</li>
-<li><p>java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</p>
-</li>
-<li><p>java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</p>
-</li>
-<li><p>给项目添加 Android 10 的网络权限。</p>
-</li>
-</ol>
+<ul>
+<li>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</li>
+<li>2.导入Eclipse项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</li>
+<li>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</li>
+<li>4.查看SHAR1值的方法</li>
+<li>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</li>
+<li>6.AAPT2 error: check logs for details</li>
+<li>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</li>
+<li>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</li>
+<li>9.给项目添加 Android 10 的网络权限。</li>
+</ul>
 <hr>
 <p><strong>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</strong></p>
 <p>解决办法：gradle 配置，这里的配置中 instrumentTest 已被弃用，不适用于现在的 gradle 版本。用 androidTest 替换 instrumentTest，编译运行即可。</p>
 <p><strong>2.导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</strong></p>
 <p>解决办法：修改自己本地安装的 gradle 版本号，然后重新编译执行。</p>
 <p><strong>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</strong></p>
-<p>解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现<br>    正确写法：<br>    <code>@FormUrlEncoded
-        @POST(forgetpwd)
-        Observable&lt;ResponseBody&gt; forget(@FieldMap Map&lt;String, String&gt; map);</code></p>
+<p>解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现 </p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">正确写法：</span><br><span class="line">	<span class="variable">@FormUrlEncoded</span></span><br><span class="line">	<span class="variable">@POST</span>(forgetpwd)</span><br><span class="line">	Observable&lt;ResponseBody&gt; forget(<span class="variable">@FieldMap</span> Map&lt;String, String&gt; map);</span><br></pre></td></tr></table></figure>
+
 <p><strong>4.查看SHAR1值的办法。</strong></p>
 <p>解决办法：<br>    (1).把apk的格式改为压缩文件，进行解压。<br>    (2).在解压出来的文件中获取META-INF文件夹下的CERT.RSA文件。<br>    (3).打开cmd Keytool –printcert –file 后面接文件的路径。 </p>
 <p><strong>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</strong></p>
-<p>解决方法：在项目的build.gradle文件中，新增一行google()即可解决<br>    <code>allprojects {
-        repositories {
-            jcenter()
-            google()//新增这一行
-        }
-    }</code></p>
+<p>解决方法：在项目的build.gradle文件中，新增一行google()即可解决</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">allprojects </span>&#123;</span><br><span class="line">	<span class="class">repositories </span>&#123;</span><br><span class="line">   		jcenter()</span><br><span class="line">   		google()<span class="comment">//新增这一行</span></span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>6.AAPT2 error: check logs for details</strong></p>
 <p>解决办法：构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。查看log具体输出原因</p>
 <p><strong>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</strong></p>
 <p>解决办法：根据错误提示，缺少对应的so文件，需要ctrl+shift+n找到so，并拷贝到jniLibs文件夹下，注意对应的文件位置。重新rebuild即可。</p>
 <p><strong>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</strong></p>
 <p>解决办法：<br>    1.检查关键字是否错误，keep class 等<br>    2.检查包名是否拼写错误<br>    3.检查是否有中文字符，比如括号，点，空格，空格，空格</p>
-<p><strong>9.给项目添加 Android 10 的网络权限。</strong><br>解决办法：<br>    1.将如下代码，添加到xml文件中<br>             <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-             &lt;network-security-config&gt;
-                &lt;base-config cleartextTrafficPermitted=&quot;true&quot; /&gt;
-             &lt;/network-security-config&gt;</code><br>    2.在application中引用xml文件即可。</p>
+<p><strong>9.给项目添加 Android 10 的网络权限。</strong><br>解决办法：<br>    1.将如下代码，添加到xml文件中     </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">network-security-config</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">base-config</span> <span class="attr">cleartextTrafficPermitted</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">network-security-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​     2.在application中引用xml文件即可。        </p>
 
       
     </div>

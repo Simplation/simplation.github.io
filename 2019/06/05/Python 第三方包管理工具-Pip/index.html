@@ -118,20 +118,20 @@
 
 
 
-<meta name="description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块  1、安装包管理工具 - pip ​      sudo easy-install pip 2、升级包管理工具的版本 ​      Linux 或 Mac OS 上： ​           pip install -U pip">
+<meta name="description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  1.安装包管理工具 2.升级包管理工具 3.安装第三方的模块 4.卸载第三方的模块  1、安装包管理工具 - pip ​        sudo easy-install pip 2、升级包管理工具的版本 ​    Linux 或 Mac OS 上： pip install -U pip​">
 <meta name="keywords" content="Pip,包管理工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 第三方包管理工具-Pip">
 <meta property="og:url" content="http://yoursite.com/2019/06/05/Python 第三方包管理工具-Pip/index.html">
 <meta property="og:site_name" content="Simplation.WANG&#39;s Blogs">
-<meta property="og:description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块  1、安装包管理工具 - pip ​      sudo easy-install pip 2、升级包管理工具的版本 ​      Linux 或 Mac OS 上： ​           pip install -U pip">
+<meta property="og:description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  1.安装包管理工具 2.升级包管理工具 3.安装第三方的模块 4.卸载第三方的模块  1、安装包管理工具 - pip ​        sudo easy-install pip 2、升级包管理工具的版本 ​    Linux 或 Mac OS 上： pip install -U pip​">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png">
 <meta property="og:image" content="http://yoursite.com/images/%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97.png">
-<meta property="og:updated_time" content="2019-06-06T13:59:45.269Z">
+<meta property="og:updated_time" content="2019-06-06T14:13:38.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 第三方包管理工具-Pip">
-<meta name="twitter:description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  安装包管理工具 升级包管理工具 安装第三方的模块 卸载第三方的模块  1、安装包管理工具 - pip ​      sudo easy-install pip 2、升级包管理工具的版本 ​      Linux 或 Mac OS 上： ​           pip install -U pip">
+<meta name="twitter:description" content="Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。  1.安装包管理工具 2.升级包管理工具 3.安装第三方的模块 4.卸载第三方的模块  1、安装包管理工具 - pip ​        sudo easy-install pip 2、升级包管理工具的版本 ​    Linux 或 Mac OS 上： pip install -U pip​">
 <meta name="twitter:image" content="http://yoursite.com/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png">
 
 
@@ -510,7 +510,7 @@ $(function() {
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  189
+                  193
                 </span>
               
 
@@ -548,22 +548,21 @@ $(function() {
 
       
         <p>Pip 是Python 推荐的用于安装Python软件包的工具。首先简单说明一下  Pip 的用法。</p>
-<ol>
-<li>安装包管理工具</li>
-<li>升级包管理工具</li>
-<li>安装第三方的模块</li>
-<li>卸载第三方的模块</li>
-</ol>
+<ul>
+<li>1.安装包管理工具</li>
+<li>2.升级包管理工具</li>
+<li>3.安装第三方的模块</li>
+<li>4.卸载第三方的模块</li>
+</ul>
 <p>1、安装包管理工具 - pip</p>
-<p>​      <code>sudo easy-install pip</code></p>
+<p>​        sudo easy-install pip</p>
 <p>2、升级包管理工具的版本</p>
-<p>​      Linux 或 Mac OS 上：</p>
-<p>​           <code>pip install -U pip</code></p>
-<p>​      Windows 上：</p>
-<p>​           <code>python -m pip install -U pip</code></p>
+<p>​    Linux 或 Mac OS 上：</p>
+<pre><code>pip install -U pip</code></pre><p>​    Windows 上：</p>
+<p>​        python -m pip install -U pip</p>
 <p>3、使用包管理工具安装第三方的模块</p>
-<p>​        举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：<br><code>pip3 install PyMySQL</code></p>
-<p><img src="/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png" alt="演示安装PyMySQL"></p>
+<p>​    举个简单的栗子，使用命令：pip3 install + 模块名。例如安装 PyMySQL 模块，则需要使用命令：</p>
+<pre><code>pip3 install PyMySQL</code></pre><p><img src="/images/%E6%BC%94%E7%A4%BA%E5%AE%89%E8%A3%85PyMySQL.png" alt="演示安装PyMySQL"></p>
 <p>4、使用包管理工具卸载模块</p>
 <p>使用卸载模块命令即可对相应模块进行移除操作，命令：pip uninstall + 模块名。</p>
 <p><img src="/images/%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97.png" alt="卸载模块"></p>
