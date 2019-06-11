@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-06T14:10:14.880Z</updated>
+  <updated>2019-06-11T14:42:10.409Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于友盟的第三方登录、分享的流程实现</title>
+    <link href="http://yoursite.com/2019/06/11/%E5%85%B3%E4%BA%8E%E5%8F%8B%E7%9B%9F%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95%E3%80%81%E5%88%86%E4%BA%AB%E7%9A%84%E6%B5%81%E7%A8%8B%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://yoursite.com/2019/06/11/关于友盟的第三方登录、分享的流程实现/</id>
+    <published>2019-06-11T14:39:58.000Z</published>
+    <updated>2019-06-11T14:42:10.409Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于友盟的第三方登录、分享的流程实现"><a href="#关于友盟的第三方登录、分享的流程实现" class="headerlink" title="关于友盟的第三方登录、分享的流程实现"></a>关于友盟的第三方登录、分享的流程实现</h1><p>​        现在几乎每款APP都有登陆、分享这些功能，正好最想项目中需要用到。因此记录一下实现的流程。此片博文主要是关于友盟的登陆分享的实现流程。</p><p>​        首先呢，友盟支持的第三方登录平台：新浪微博、腾讯微博、QQ、QQ空间、微信、人人网；</p><p>​        其次呢，友盟支持的第三方的分享平台：</p><p>​        国内的平台：微信（微信好友及微信朋友圈）、QQ、QQ空间、新浪微博、腾讯微博、人人网、支付宝、豆瓣、印象笔记、有道云笔记、来往、易信等等。</p><p>​         国外的平台：Facebook、Twitter、Google+、KaKao、Instagram、WhatsApp、Line、EverNote、Pocket、Pinterest、Linkedin、G+等。</p><p>​        （Ps：可能会有人说我根本用不了那么多的平台，其实呢，你只需要在集成SDK的时候，将你需要使用的平台集成进去就好了）</p><p>​        友盟账号注册，添加应用，获取AppKey等这些我就不再这里多说了，因为我相信大家都是老司机，轻车熟路。但是下载SDK的时候，只需要下载自己将用到的东西就OK。</p><p>​        最后呢，就是那个集成流程：</p><ul><li>在Manifest中添加友盟的权限，AppKey，登陆分享的组件。</li><li>添加jar和资源文件。</li><li>在代码中设置要分享的内容和制定分享平台。</li><li>在指定的各个平台申请账号，添加应用。</li></ul><p>注：官方的文档是比较详细的，具体请戳这里：[<a href="http://dev.umeng.com/social/android/sdk-download?spm=0.0.0.0.g0iA18]" target="_blank" rel="noopener">http://dev.umeng.com/social/android/sdk-download?spm=0.0.0.0.g0iA18]</a>(</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于友盟的第三方登录、分享的流程实现&quot;&gt;&lt;a href=&quot;#关于友盟的第三方登录、分享的流程实现&quot; class=&quot;headerlink&quot; title=&quot;关于友盟的第三方登录、分享的流程实现&quot;&gt;&lt;/a&gt;关于友盟的第三方登录、分享的流程实现&lt;/h1&gt;&lt;p&gt;​     
+      
+    
+    </summary>
+    
+      <category term="友盟，第三方登录、分享" scheme="http://yoursite.com/categories/%E5%8F%8B%E7%9B%9F%EF%BC%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95%E3%80%81%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 中字符串的相关用法</title>
