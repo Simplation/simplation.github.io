@@ -1663,6 +1663,10 @@ pre .javascript .function {
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
 }
+.post-body a {
+  color: #428bca;
+  font-weight: bold;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1815,7 +1819,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffebd4;
+  background: #ba65f7;
 }
 .links-of-blogroll {
   font-size: 13px;
