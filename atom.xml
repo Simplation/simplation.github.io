@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-28T14:12:32.377Z</updated>
+  <updated>2019-07-01T14:27:15.646Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常用插件汇总</title>
+    <link href="http://yoursite.com/2019/07/01/Chrome%20%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2019/07/01/Chrome 常用插件汇总/</id>
+    <published>2019-07-01T14:24:04.000Z</published>
+    <updated>2019-07-01T14:27:15.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>自做 Android 以来，成为一名 Google 的死忠粉，Google 的软件产品几乎都用过，这篇主要记录一下 Chrome 的相关扩展程序，有了这些插件，你的 Chrome 绝对堪称神器。(要有取舍，当然这里忽略内存！！！)</p><ul><li><p>百度网盘助手</p><p><em>把网盘的下载地址导出到aria2/aria2-rpc，支持YAAW</em></p></li><li><p>Adblock Plus</p><p><em>免费广告拦截程序</em></p></li><li><p>Augmented Steam</p></li><li><p>ChroPath</p><p>生成和验证独特的选择器</p></li><li><p>Color by Fardos</p><p><em>从网站中选择颜色，保存颜色和渐变，获得匹配的色调和色调，并创建美丽的渐变</em></p></li><li><p>Dark Reader</p><p><em>黑色主题，适用于任何网站。关爱眼睛，就使用Dark Reader进行夜间和日间浏览</em></p></li><li><p>GayHub</p><p><em>github的一个很棒的扩展程序</em></p></li><li><p>Infinity 新标签页(Pro)</p><p><em>百万用户选择的新标签页和快速拨号，自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录</em></p></li><li><p>JavaScript and CSS Code Beautifier</p><p><em>打开 .css / .js / .json 文件时，可以美化 CSS，JavaScript 和 JSON 代码。</em></p></li><li><p>JSONView</p><p><em>验证、查看、并格式化 JSON 文档</em></p></li><li><p>Momentum</p><p><em>美化 Chrome 启动页，将新标签页替换为具有待办事项，天气和灵感的个人仪表板等。</em></p></li><li><p>Octotree</p><p><em>以树形结构显示 Github 仓库的代码，省去一级一级查找</em></p></li><li><p>Reggy</p><p><em>创建随机身份并在几秒钟内注册任何网站！ Reggy还包括一个内置的表格填充物</em></p></li><li><p>uBlock Origin</p><p><em>一款高效的网络请求过滤工具，占用极低的内存和 CPU。</em></p></li><li><p>Web Scraper</p><p><em>网站数据提取工具</em></p></li><li><p>书签侧边栏</p><p><em>在浏览器视图区左侧添加固定式的, 管理所有书签的侧边栏.</em></p></li><li><p>二管家</p><p><em>一个全能的拓展管理和用户脚本管理拓展</em></p></li><li><p>简悦 - SimpRead</p><p><em>让你瞬间进入沉浸式阅读的 Chrome 扩展，类似 Safari 的阅读模式。 包含 聚焦模式和阅读模式两种</em></p></li><li><p>谷歌访问助手</p><p><em>不用多说了吧</em></p></li><li><p>达达划词翻译</p><p><em>划词翻译、生词本、吐司弹词、与扇贝同步</em></p></li><li><p>Vysor<br><em>无需 root, 能够在 Chrome 里通过 USB 直接控制 Android 设备</em></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;自做 Android 以来，成为一名 Google 的死忠粉，Google 的软件产品几乎都用过，这篇主要记录一下 Chrome 的相关扩展程序，有了这些插件，你的 Chrome 绝对堪称神器。(要有取舍，当然这里忽略内存！！！)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;百度网盘助
+      
+    
+    </summary>
+    
+      <category term="Chrome" scheme="http://yoursite.com/categories/Chrome/"/>
+    
+      <category term="Browser" scheme="http://yoursite.com/categories/Chrome/Browser/"/>
+    
+    
+      <category term="Chrome Extension" scheme="http://yoursite.com/tags/Chrome-Extension/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android 中常见问题汇总(附解决办法)</title>
     <link href="http://yoursite.com/2019/06/04/Android%20%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     <id>http://yoursite.com/2019/06/04/Android 中常见问题汇总/</id>
     <published>2019-06-04T11:47:04.000Z</published>
-    <updated>2019-06-28T14:12:32.377Z</updated>
+    <updated>2019-07-01T14:14:50.135Z</updated>
     
     <content type="html"><![CDATA[<p>本片博文主要介绍的是自己在日常工作中遇到的一些问题，在此统一做一个汇总，希望能后帮到大家。</p><ul><li>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</li><li>2.导入Eclipse项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</li><li>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</li><li>4.查看SHAR1值的方法</li><li>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</li><li>6.AAPT2 error: check logs for details</li><li>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</li><li>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</li><li>9.给项目添加 Android 10 的网络权限。</li><li>10.Android 中 String 资源文件添加空格/空白格</li></ul><hr><p><strong>1.Android Studio 编译项目报错：The SourceSet ‘instrumentTest’ is not recognized by the Android Gradle Plugin.</strong></p><p>解决办法：gradle 配置，这里的配置中 instrumentTest 已被弃用，不适用于现在的 gradle 版本。用 androidTest 替换 instrumentTest，编译运行即可。</p><p><strong>2.导入Eclipse 项目报错，Error:Could not determine the class-path for interface com.android.builder.model.AndroidProject.</strong></p><p>解决办法：修改自己本地安装的 gradle 版本号，然后重新编译执行。</p><p><strong>3.使用Retrofit进行网络请求（post）的时候，log打印日志：java.lang.IllegalArgumentException: @FieldMap parameters can only be used with form encoding. (parameter #1)</strong></p><p>解决办法：当POST请求时，@FormUrlEncoded和@Field简单的表单键值对。两个需要结合使用，否则会报错；@Query请求参数。无论是GET或POST的参数都可以用它来实现 </p><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">正确写法：</span><br><span class="line"><span class="variable">@FormUrlEncoded</span></span><br><span class="line"><span class="variable">@POST</span>(forgetpwd)</span><br><span class="line">Observable&lt;ResponseBody&gt; forget(<span class="variable">@FieldMap</span> Map&lt;String, String&gt; map);</span><br></pre></td></tr></table></figure><p><strong>4.查看SHAR1值的办法。</strong></p><p>解决办法：<br>    (1).把apk的格式改为压缩文件，进行解压。<br>    (2).在解压出来的文件中获取META-INF文件夹下的CERT.RSA文件。<br>    (3).打开cmd Keytool –printcert –file 后面接文件的路径。 </p><p><strong>5.Could not find com.android.tools.build:aapt2:3.2.1-4818971.</strong></p><p>解决方法：在项目的build.gradle文件中，新增一行google()即可解决</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">allprojects </span>&#123;</span><br><span class="line"><span class="class">repositories </span>&#123;</span><br><span class="line">   jcenter()</span><br><span class="line">   google()<span class="comment">//新增这一行</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>6.AAPT2 error: check logs for details</strong></p><p>解决办法：构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。查看log具体输出原因</p><p><strong>7.java.lang.UnsatisfiedLinkError: dlopen failed: library “/system/lib64/libweibosdkcore.so” needed or dlopened by “/system/lib64/libnativeloader.so” is not accessible for the namespace “classloader-namespace”</strong></p><p>解决办法：根据错误提示，缺少对应的so文件，需要ctrl+shift+n找到so，并拷贝到jniLibs文件夹下，注意对应的文件位置。重新rebuild即可。</p><p><strong>8.java.io.IOException: proguard.ParseException: Unexpected keyword ‘com.amap.api.mapcore.xx’</strong></p><p>解决办法：<br>    1.检查关键字是否错误，keep class 等<br>    2.检查包名是否拼写错误<br>    3.检查是否有中文字符，比如括号，点，空格，空格，空格</p><p><strong>9.给项目添加 Android 10 的网络权限。</strong><br>解决办法：<br>    1.将如下代码，添加到xml文件中     </p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">network-security-config</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">base-config</span> <span class="attr">cleartextTrafficPermitted</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">network-security-config</span>&gt;</span></span><br></pre></td></tr></table></figure><p>​     2.在application中引用xml文件即可。        </p><p><strong>10.Android 中 String 资源文件添加空格/空白格</strong><br>解决办法：Android 中字符串资源放置在 string.xml 文件中，并且该文件不能识别空格，但是在实际开发过程中需要用到空格，在需要设置的地方添加 &#160; 即可。</p>]]></content>
     
