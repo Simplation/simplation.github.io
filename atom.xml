@@ -190,7 +190,7 @@
     <link href="http://yoursite.com/2018/05/08/CantuseSubversioncommandlineclient%20%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     <id>http://yoursite.com/2018/05/08/CantuseSubversioncommandlineclient 的解决方案/</id>
     <published>2018-05-08T09:36:21.000Z</published>
-    <updated>2019-07-15T14:24:59.206Z</updated>
+    <updated>2019-07-15T14:26:32.509Z</updated>
     
     <content type="html"><![CDATA[<p>由于项目在 iPhone X 上出现异常，要对 Xcode 进行9.3版本的更新时，发现也需要对 Mac OS 升级为 10.13.4，不然会出现不兼容的情况，谁叫人家是大哥呢？ 作为一名程序猿，不升级怎么修复 Bug？！</p><p>经过漫长的等待，终于更新好了，咦，Finder 怎么编成“访达”，当然还有其他的一些变化，这是 Apple 在汉语化的结果。真是受不了这翻译，果断切换为英文版。好了废话不多说，当我兴冲冲的打开 Xcode，准备提交更改的代码时候，直接弹出 <strong>Can’t use Subversion command line client: svn Probably the path to Subversion executable is wrong. Fix it. 错误。</strong></p><p>当出现这个问题的时候，不管你的Mac上边安装的什么IDE，提交SVN的时候都会报 <em><del>Can’t use Subversion command line client: svn Probably the path to Subversion executable is wrong. Fix it. 错误。</del></em>下边我贴出的Android Studio的错误信息。</p><p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5CAndroidStudio%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.jpg" alt="Android Studio 错误信息"></p><p>首先来说一下 Windows 下的解决方法：Windows 下的这个错误比较容易解决，重新安装一下SVN，勾选一下 Command line client tools 这个选项，最后在IDE中设置一下 SVN 的相关路径即可。作为一个 Mac 新手，这个问题还是比较棘手，从错误信息来看，是缺少相关的工具。</p><p><strong>解决办法：</strong></p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打开 Terminal 输入 xcode-<span class="keyword">select</span> <span class="comment">--install ,大概等待2分钟左右安装 Xcode 插件。等待安装完成之后，你就可以开心的提交代码。</span></span><br><span class="line"></span><br><span class="line">xcode-<span class="keyword">select</span> <span class="comment">--install</span></span><br></pre></td></tr></table></figure><p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.png" alt="解决办法"></p><p>在此记录一下遇到的问题，希望给遇到同样问题的小伙伴一点参考。</p>]]></content>
     
@@ -210,6 +210,35 @@
       <category term="Xcode" scheme="http://yoursite.com/tags/Xcode/"/>
     
       <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS开发者协议更新的错误解决方法</title>
+    <link href="http://yoursite.com/2018/04/22/iOS%20%E5%BC%80%E5%8F%91%E8%80%85%E5%8D%8F%E8%AE%AE%E6%9B%B4%E6%96%B0%E7%9A%84%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/04/22/iOS 开发者协议更新的错误解决方法/</id>
+    <published>2018-04-22T04:42:43.000Z</published>
+    <updated>2019-07-15T14:41:20.971Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于很久没有登陆苹果开发者账号，要不是需要更新App的版本，苹果开发者协议更新导致开发者账号不能正常使用的问题就会遗漏，既然问题来了，那就想办法解决一下喽。</p><p>首先贴出错误信息，如下图所示</p><p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.jpg" alt="异常信息"></p><p>按照以往的方式直接点击右上角的 Review Agreement，然后同意开发许可协议就可以解决问题，但这次似乎有点不同，提示需要编辑电话，既然不一样，那就直接看错误信息。根据错误信息提示：开发者协议已经更新，你必须接受开发者许可协议，首先你需要更新 Apple ID 的联系方式。</p><p><strong>解决办法：</strong></p><p>点击 applied.apple.com 链接进入联系方式修改，修改的时候需要提供短信验证码，填写完成后，在返回错误信息页面，直接刷新网页，就会出现如下页面。到这里就跟之前的解决方法是一样的，点击同意开发许可协议，然后点击完成就 OK。</p><p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E5%90%8C%E6%84%8F%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.jpg" alt="同意许可协议"></p><p>在此记录一下遇到的问题，希望给遇到同样问题的小伙伴一点参考。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于很久没有登陆苹果开发者账号，要不是需要更新App的版本，苹果开发者协议更新导致开发者账号不能正常使用的问题就会遗漏，既然问题来了，那就想办法解决一下喽。&lt;/p&gt;
+&lt;p&gt;首先贴出错误信息，如下图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/.com//E:%5CHEXO%5C
+      
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+      <category term="开发者许可协议更新" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%E6%9B%B4%E6%96%B0/"/>
     
   </entry>
   

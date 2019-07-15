@@ -84,6 +84,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[iOS开发者协议更新的错误解决方法]]></title>
+    <url>%2F2018%2F04%2F22%2FiOS%20%E5%BC%80%E5%8F%91%E8%80%85%E5%8D%8F%E8%AE%AE%E6%9B%B4%E6%96%B0%E7%9A%84%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[由于很久没有登陆苹果开发者账号，要不是需要更新App的版本，苹果开发者协议更新导致开发者账号不能正常使用的问题就会遗漏，既然问题来了，那就想办法解决一下喽。 首先贴出错误信息，如下图所示 按照以往的方式直接点击右上角的 Review Agreement，然后同意开发许可协议就可以解决问题，但这次似乎有点不同，提示需要编辑电话，既然不一样，那就直接看错误信息。根据错误信息提示：开发者协议已经更新，你必须接受开发者许可协议，首先你需要更新 Apple ID 的联系方式。 解决办法： 点击 applied.apple.com 链接进入联系方式修改，修改的时候需要提供短信验证码，填写完成后，在返回错误信息页面，直接刷新网页，就会出现如下页面。到这里就跟之前的解决方法是一样的，点击同意开发许可协议，然后点击完成就 OK。 在此记录一下遇到的问题，希望给遇到同样问题的小伙伴一点参考。]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>开发者许可协议更新</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python 中字符串的相关用法]]></title>
     <url>%2F2018%2F04%2F02%2FPython%20%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%9B%B8%E5%85%B3%E7%94%A8%E6%B3%95%2F</url>
     <content type="text"><![CDATA[本篇文章主要记录一下Python中关于字符串的相关操作，一来是为了自己加深记忆，二来是方便后期查找起来比较快速。 1、拼接字符串 2、字符串复制 3、字符串长度 4、字符串大小写转换(如果不进行重新赋值操作，原数据是不会发生变化的) 5、给字符串编号(从左到右是是从0开始) 6、字符串截取 7、去掉字符串的空格 1、拼接字符串1.1、使用 + 来拼接，只能操作相同类型12345a = "正在学习"b = "Python"c = a + bprint(c) # 正在学习Python 1.2、使用占位符来拼接字符串1234a = 'Py'b = 'thon'print('%s%s' % (a, b)) # Python 2、字符串复制2.1、使用等号进行字符串的复制12345a = 'copy string...'print(a) # result:copystring...b = aprint(b) # result:copy string... 3、字符串长度使用len()函数获取字符串的长度1234A = 'copy string...'print(A) # result:copy string...print(len(A)) # result:14 4、字符串大小写转换(如果不进行重新赋值操作，原数据是不会发生变化的)4.1、将小写转换成大写1234567a = 'copy, python'a.upper() # 将小写完全变成大写print(a) # result:'COPY, PYTHON'print(a) # result:'copy, python' # 原数据没有改变b = a.upper() # 进行重新赋值，就会发生变化print(b) # result:'COPY, PYTHON' 4.2、将大写转换成小写12c = b.lower()print(c) # result:'copy, python' 4.3、只改变首字符的大小写123456789print(a) # result:'copy, python'a.capitalize() # 改变首字母为大写print(a) # result:'Copy, python'print(a) # result:'copy, python'b = a.capitalize()print(a) # result:'Copy, python'print(b) # result:'copy, python' 4.4、判断首字母是否是大写(不含有逗号，且首字母大写的情况才是正确)12345678a = 'Hello, python' # 含有逗号的情况,直接返回 False。第一个是大写，第二个是小写print(a.istitle()) # result:Falsea = 'Hello, Python'print(a.istitle()) # result:Truea = 'HelloPython'print(a.istitle()) # result:True 4.5、判断字符串是否都是大写1234567a = 'HelloPython'print(a.isupper()) # result:Falseprint(a.upper().isupper()) # result:Truea = 'Hello,Python'print(a.islower()) # result:Falseprint(a.lower().islower()) # result:True 5、给字符串编号(从左到右是是从0开始)123456a = 'Hello, World!'print(len(a)) # result:13print(a[0]) # result:'H'print(a[9]) # result:'r'print(a[-1]) # 从右到左是从-1开始的 result:'!' 6、字符串截取12345a = 'Hello,World'print(a[2:5]) # 从a开始到b结束 result:'llo'print(a[3:]) # 从a开始，截取到结束 # 'lo,World'print(a[:5]) # 从开始位置截取到b位置 # result:'Hello,' 7、去掉字符串的空格123456a = ' Hello 'print(a.strip()) # 去掉前后的空格 # result:'Hello'print(a) # result:' Hello 'print(b.lstrip()) # 去掉前面的空格 # result:'Hello 'print(b.rstrip()) # 去掉后面的空格 # result:' Hello']]></content>
