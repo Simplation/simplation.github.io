@@ -126,14 +126,13 @@
 <meta property="og:site_name" content="Simplation.WANG&#39;s Blogs">
 <meta property="og:description" content="1. App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app’s Info.plist file.错误描述：创建App使用网络请求的时候，Log信息如下：A">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%85%8D%E7%BD%AEplist%E6%96%87%E4%BB%B6.jpg">
 <meta property="og:image" content="http://yoursite.com/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%94%99%E8%AF%AF%E6%88%AA%E5%9B%BE.jpg">
 <meta property="og:image" content="http://yoursite.com/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E4%BF%AE%E6%94%B9%E7%89%88%E6%9C%AC%E5%8F%B7.jpg">
-<meta property="og:updated_time" content="2019-07-16T12:15:49.513Z">
+<meta property="og:updated_time" content="2019-07-17T11:26:45.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS 错误整理">
 <meta name="twitter:description" content="1. App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app’s Info.plist file.错误描述：创建App使用网络请求的时候，Log信息如下：A">
-<meta name="twitter:image" content="http://yoursite.com/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%85%8D%E7%BD%AEplist%E6%96%87%E4%BB%B6.jpg">
+<meta name="twitter:image" content="http://yoursite.com/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%94%99%E8%AF%AF%E6%88%AA%E5%9B%BE.jpg">
 
 
 
@@ -574,7 +573,9 @@ $(function() {
 <p><strong><em>解决办法</em></strong>：</p>
 <p>​                1&gt;在 Info.plist 中添加类型为 Dictionary 的 NSAppTransportSecurity ;</p>
 <p>​                2&gt;在 NSAppTransportSecurity 下添加 Boolean 类型的 NSAllowsArbitraryLoads 类型,值设为 YES;</p>
-<p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%85%8D%E7%BD%AEplist%E6%96%87%E4%BB%B6.jpg" alt="配置 plist 文件"></p>
+
+
+
 <h5 id="2-Declaration-of-sysctlbyname’-must-be-imported-from-module-‘Darwin-sys-sysctl’-before-it-is-required"><a href="#2-Declaration-of-sysctlbyname’-must-be-imported-from-module-‘Darwin-sys-sysctl’-before-it-is-required" class="headerlink" title="2. Declaration of sysctlbyname’ must be imported from module ‘Darwin.sys.sysctl’ before it is required"></a>2. Declaration of sysctlbyname’ must be imported from module ‘Darwin.sys.sysctl’ before it is required</h5><p><strong><em>解决方法</em></strong>：缺少相应的头文件，进行导入#import 操作即可。</p>
 <h5 id="3-ERROR-ITMS-90717-“Invalid-App-Store-Icon-The-App-Store-Icon-in-the-asset-catalog-in-‘-app’-can’t-be-transparent-nor-contain-an-alpha-channel-”"><a href="#3-ERROR-ITMS-90717-“Invalid-App-Store-Icon-The-App-Store-Icon-in-the-asset-catalog-in-‘-app’-can’t-be-transparent-nor-contain-an-alpha-channel-”" class="headerlink" title="3. ERROR ITMS-90717: “Invalid App Store Icon. The App Store Icon in the asset catalog in ‘*.app’ can’t be transparent nor contain an alpha channel.”"></a>3. ERROR ITMS-90717: “Invalid App Store Icon. The App Store Icon in the asset catalog in ‘*.app’ can’t be transparent nor contain an alpha channel.”</h5><p><img src="/.com//E:%5CHEXO%5Cthemes%5Cnext%5Csource%5Cimages%5C%E9%94%99%E8%AF%AF%E6%88%AA%E5%9B%BE.jpg" alt="错误截图"></p>
 <p><strong><em>解决办法</em></strong>：上传 AppStore 出现的图片问题，因为图片含有 alpha 通道或者透明度，直接打开图片，重新导出，去掉勾选的 Alpha 复选框，重新打包上传。</p>
