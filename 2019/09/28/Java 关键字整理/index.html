@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/3a598309.js","daovoice")
+  daovoice('init', {
+      app_id: "3a598309"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="java 关键字,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Simplation.WANG's Blogs" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/source/images/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="Java 关键字 概念：Java 关键字是对 Java 编译器有特殊含义的字符串，是编译器和程序员的一个约定，程序员利用关键字来告诉编译器其声明的变量类型、类、方法特性等信息。  关键字整理    关键字 含义    abstract 表明类或者成员方法具有抽象属性   assert 断言，用来进行程序调试   boolean 基本数据类型之一，声明布尔类型的关键字   break 提前跳出一个块">
+<meta name="keywords" content="java 关键字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 关键字整理.md">
+<meta property="og:url" content="http://yoursite.com/2019/09/28/Java 关键字整理/index.html">
+<meta property="og:site_name" content="Simplation.WANG&#39;s Blogs">
+<meta property="og:description" content="Java 关键字 概念：Java 关键字是对 Java 编译器有特殊含义的字符串，是编译器和程序员的一个约定，程序员利用关键字来告诉编译器其声明的变量类型、类、方法特性等信息。  关键字整理    关键字 含义    abstract 表明类或者成员方法具有抽象属性   assert 断言，用来进行程序调试   boolean 基本数据类型之一，声明布尔类型的关键字   break 提前跳出一个块">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-01-14T14:41:04.321Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java 关键字整理.md">
+<meta name="twitter:description" content="Java 关键字 概念：Java 关键字是对 Java 编译器有特殊含义的字符串，是编译器和程序员的一个约定，程序员利用关键字来告诉编译器其声明的变量类型、类、方法特性等信息。  关键字整理    关键字 含义    abstract 表明类或者成员方法具有抽象属性   assert 断言，用来进行程序调试   boolean 基本数据类型之一，声明布尔类型的关键字   break 提前跳出一个块">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/28/Java 关键字整理/">
+
+
+
+
+
+  <title>Java 关键字整理.md | Simplation.WANG's Blogs</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+  <!-- custom analytics part create by xiamo -->
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("BVrf3pTXj8EGBxA5GqyHYq6R-gzGzoHsz", "Yi1oS90pBwdGYW3CdhopNPc2");</script>
+<script>
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+	$(".leancloud_visitors").each(function() {
+		var url = $(this).attr("id").trim();
+		query.equalTo("url", url);
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {
+					var content = $(document.getElementById(url)).text() + ': 0';
+					$(document.getElementById(url)).text(content);
+					return;
+				}
+				for (var i = 0; i < results.length; i++) {
+					var object = results[i];
+					var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+					$(document.getElementById(url)).text(content);
+				}
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+
+	});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else if ($('.post-title-link').length > 1) {
+		showTime(Counter);
+	}
+});
+</script>
+
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="bg_content">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Simplation.WANG's Blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/28/Java 关键字整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simplation.WANG">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Simplation.WANG's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Java 关键字整理.md</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-28T23:30:18+08:00">
+                2019-09-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/关键字/" itemprop="url" rel="index">
+                    <span itemprop="name">关键字</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/09/28/Java 关键字整理/" class="leancloud_visitors" data-flag-title="Java 关键字整理.md">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>  阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  6.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  26
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="Java-关键字"><a href="#Java-关键字" class="headerlink" title="Java 关键字"></a>Java 关键字</h5><ul>
+<li><p>概念：Java 关键字是对 Java 编译器有特殊含义的字符串，是编译器和程序员的一个约定，程序员利用关键字来告诉编译器其声明的变量类型、类、方法特性等信息。</p>
+</li>
+<li><p>关键字整理</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>关键字</strong></th>
+<th align="left"><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">abstract</td>
+<td align="left">表明类或者成员方法具有抽象属性</td>
+</tr>
+<tr>
+<td align="center">assert</td>
+<td align="left">断言，用来进行程序调试</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="left">基本数据类型之一，声明布尔类型的关键字</td>
+</tr>
+<tr>
+<td align="center">break</td>
+<td align="left">提前跳出一个块</td>
+</tr>
+<tr>
+<td align="center">byte</td>
+<td align="left">基本数据类型之一，字节类型</td>
+</tr>
+<tr>
+<td align="center">case</td>
+<td align="left">用在 switch 语句之中，表示其中的一个分支</td>
+</tr>
+<tr>
+<td align="center">catch</td>
+<td align="left">用在异常处理中，用来捕捉异常</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="left">基本数据类型之一，字符类型</td>
+</tr>
+<tr>
+<td align="center">class</td>
+<td align="left">声明一个类</td>
+</tr>
+<tr>
+<td align="center">const</td>
+<td align="left">保留关键字，没有具体含义</td>
+</tr>
+<tr>
+<td align="center">continue</td>
+<td align="left">回到一个块的开始处</td>
+</tr>
+<tr>
+<td align="center">default</td>
+<td align="left">默认，例如，用在 switch 语句中，表明一个默认的分支。Java8 中也作用于声明接口函数的默认实现</td>
+</tr>
+<tr>
+<td align="center">do</td>
+<td align="left">用在 do-while 循环结构中</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="left">基本数据类型之一，双精度浮点数类型</td>
+</tr>
+<tr>
+<td align="center">else</td>
+<td align="left">用在条件语句中，表明当条件不成立时的分支</td>
+</tr>
+<tr>
+<td align="center">enum</td>
+<td align="left">枚举</td>
+</tr>
+<tr>
+<td align="center">extends</td>
+<td align="left">表明一个类型是另一个类型的子类型。对于类，可以是另一个类或者抽象类；对于接口，可以是另一个接口</td>
+</tr>
+<tr>
+<td align="center">final</td>
+<td align="left">用来说明最终属性，表明一个类不能派生出子类，或者成员方法不能被覆盖，或者成员域的值不能被改变，用来定义常量</td>
+</tr>
+<tr>
+<td align="center">finally</td>
+<td align="left">用于处理异常情况，用来声明一个基本肯定会被执行到的语句块</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="left">基本数据类型之一，单精度浮点数类型</td>
+</tr>
+<tr>
+<td align="center">for</td>
+<td align="left">一种循环结构的引导词</td>
+</tr>
+<tr>
+<td align="center">goto</td>
+<td align="left">保留关键字，没有具体含义</td>
+</tr>
+<tr>
+<td align="center">if</td>
+<td align="left">条件语句的引导词</td>
+</tr>
+<tr>
+<td align="center">implements</td>
+<td align="left">表明一个类实现了给定的接口</td>
+</tr>
+<tr>
+<td align="center">import</td>
+<td align="left">表明要访问指定的类或包</td>
+</tr>
+<tr>
+<td align="center">instanceof</td>
+<td align="left">用来测试一个对象是否是指定类型的实例对象</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="left">基本数据类型之一，整数类型</td>
+</tr>
+<tr>
+<td align="center">interface</td>
+<td align="left">接口</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="left">基本数据类型之一，长整数类型</td>
+</tr>
+<tr>
+<td align="center">native</td>
+<td align="left">用来声明一个方法是由与计算机相关的语言（如 C / C++ / FORTRAN 语言）实现的</td>
+</tr>
+<tr>
+<td align="center">new</td>
+<td align="left">用来创建新实例对象</td>
+</tr>
+<tr>
+<td align="center">package</td>
+<td align="left">包</td>
+</tr>
+<tr>
+<td align="center">private</td>
+<td align="left">一种访问控制方式：私用模式</td>
+</tr>
+<tr>
+<td align="center">protected</td>
+<td align="left">一种访问控制方式：保护模式</td>
+</tr>
+<tr>
+<td align="center">public</td>
+<td align="left">一种访问控制方式：共用模式</td>
+</tr>
+<tr>
+<td align="center">return</td>
+<td align="left">从成员方法中返回数据</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="left">基本数据类型之一,短整数类型</td>
+</tr>
+<tr>
+<td align="center">static</td>
+<td align="left">表明具有静态属性</td>
+</tr>
+<tr>
+<td align="center">strictfp</td>
+<td align="left">用来声明 FP_strict（单精度或双精度浮点数）表达式遵循 IEEE 754 算术规范</td>
+</tr>
+<tr>
+<td align="center">super</td>
+<td align="left">表明当前对象的父类型的引用或者父类型的构造方法</td>
+</tr>
+<tr>
+<td align="center">switch</td>
+<td align="left">分支语句结构的引导词</td>
+</tr>
+<tr>
+<td align="center">synchronized</td>
+<td align="left">表明一段代码需要同步执行</td>
+</tr>
+<tr>
+<td align="center">this</td>
+<td align="left">指向当前实例对象的引用</td>
+</tr>
+<tr>
+<td align="center">throw</td>
+<td align="left">抛出一个异常</td>
+</tr>
+<tr>
+<td align="center">throws</td>
+<td align="left">声明在当前定义的成员方法中所有需要抛出的异常</td>
+</tr>
+<tr>
+<td align="center">transient</td>
+<td align="left">声明不用序列化的成员域</td>
+</tr>
+<tr>
+<td align="center">try</td>
+<td align="left">尝试一个可能抛出异常的程序块</td>
+</tr>
+<tr>
+<td align="center">void</td>
+<td align="left">声明当前成员方法没有返回值</td>
+</tr>
+<tr>
+<td align="center">volatile</td>
+<td align="left">表明两个或者多个变量必须同步地发生变化</td>
+</tr>
+<tr>
+<td align="center">while</td>
+<td align="left">用在循环结构中</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ul>
+<li><p>分类</p>
+<ul>
+<li><p>数据类型：</p>
+<p>用于数据类型的关键字有 boolean、byte、char、 double、 false、float、int、long、new、null、short、true、void、instanceof；</p>
+</li>
+<li><p>语句：</p>
+<p>用于语句的关键字有 break、case、 catch、 continue、 default 、do、 else、 for、 if、return、switch、try、 while、 finally、 throw、this、 super；</p>
+</li>
+<li><p>修饰：</p>
+<p>用于修饰的关键字有 abstract、final、native、private、 protected、public、static、synchronized、<br>　　transient、 volatile；</p>
+</li>
+<li><p>方法、类、接口、包和异常：</p>
+<p>用于方法、类、接口、包和异常的关键字有 class、 extends、 implements、interface、 package、import、throws；</p>
+</li>
+<li><p>还有些关键字,如 cat、 future、 generic、innerr、 operator、 outer、rest、var 等都是 Java 保留的没有意义的关键字。</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>使用介绍</p>
+<ul>
+<li><p>示例代码为伪代码，无法正常运行。 </p>
+</li>
+<li><p><strong>abstract</strong></p>
+<ul>
+<li><p>abstract 关键字可以修饰类或方法。abstract 类可以扩展（增加子类），但不能直接实例化。abstract 方法不在声明它的类中实现，但必须在某个子类中重写。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span></span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> String <span class="title">myMethod</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">采用 <span class="keyword">abstract</span> 方法的类本来就是抽象类，并且必须声明为 <span class="keyword">abstract</span>。<span class="keyword">abstract</span> 类不能实例化。仅当 <span class="keyword">abstract</span> 类的子类实现其超类的所有 <span class="keyword">abstract</span> 方法时，才能实例化 <span class="keyword">abstract</span> 类的子类。这种类称为具体类，以区别于 <span class="keyword">abstract</span> 类。如果 <span class="keyword">abstract</span> 类的子类没有实现其超类的所有 <span class="keyword">abstract</span> 方法，该子类也是 <span class="keyword">abstract</span> 类。<span class="keyword">abstract</span> 关键字不能应用于 <span class="keyword">static</span>、<span class="keyword">private</span> 或 <span class="keyword">final</span> 方法，因为这些方法不能被重写，因此，不能在子类中实现。<span class="keyword">final</span> 类的方法都不能是 <span class="keyword">abstract</span>，因为 <span class="keyword">final</span> 类不能有子类。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>boolean</strong></p>
+<ul>
+<li><p>boolean 变量的值可以是 true 或 false。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> valid = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (valid) &#123;</span><br><span class="line">	&lt;statement&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">boolean</span> 变量只能以 <span class="keyword">true</span> 或 <span class="keyword">false</span> 作为值。<span class="keyword">boolean</span> 不能与数字类型相互转换。包含 <span class="keyword">boolean</span> 操作数的表达式只能包含 <span class="keyword">boolean</span> 操作数。Boolean 类是 <span class="keyword">boolean</span> 原始类型的包装对象类。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>break</strong></p>
+<ul>
+<li><p>用于提前退出 for、while 或 do 循环，或者在 switch 语句中用来结束 case 块。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; max; i++) &#123;</span><br><span class="line">	<span class="keyword">if</span> (&lt;loop finished early &gt;) &#123;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> type = &lt;some value&gt;;</span><br><span class="line"><span class="keyword">switch</span> (type) &#123;</span><br><span class="line">	case1:</span><br><span class="line">		&lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	case2:</span><br><span class="line">        &lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        &lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">break</span> 总是退出最深层的 <span class="keyword">while</span>、<span class="keyword">for</span>、<span class="keyword">do</span> 或 <span class="keyword">switch</span> 语句</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>byte</strong></p>
+<ul>
+<li><p>byte 是 Java 原始类型。byte 可存储在 [-128,127] 范围以内的整数值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">byteb = <span class="number">124</span>;</span><br><span class="line"></span><br><span class="line">-示例-</span><br><span class="line">Byte 类是 <span class="keyword">byte</span> 原始类型的包装对象类。它定义代表此类型的值的范围的MIN_VALUE和MAX_VALUE常量。Java 中的所有整数值都是 <span class="number">32</span> 位的 <span class="keyword">int</span> 值，除非值后面有 l 或 L（如 <span class="number">235L</span>），这表示该值应解释为 <span class="keyword">long</span> 。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>case</strong></p>
+<ul>
+<li><p>用来标记 switch 语句中的每个分支。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> type = &lt;some value&gt;;</span><br><span class="line"><span class="keyword">switch</span> (type) &#123;</span><br><span class="line">	case1:</span><br><span class="line">		&lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">    case2:</span><br><span class="line">        &lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        &lt;statement&gt;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-示例-</span><br><span class="line"><span class="keyword">case</span> 块没有隐式结束点。<span class="keyword">break</span> 语句通常在每个 <span class="keyword">case</span> 块末尾使用，用于退出 <span class="keyword">switch</span> 语句。</span><br><span class="line">如果没有 <span class="keyword">break</span> 语句，执行流将进入所有后面的 <span class="keyword">case</span> 和/或 <span class="keyword">default</span> 块。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>catch</strong></p>
+<ul>
+<li><p>catch 关键字用来在 try-catch 或 try-catch-finally 语句中定义异常处理块。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	&lt;可能引发异常的块&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (&lt;java.lang.Exception或子类 &gt; e) &#123;</span><br><span class="line">	&lt;处理异常e的代码&gt;</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">    &lt;有异常或无异常情况下都执行的语句&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-示例-</span><br><span class="line">开始和结束标记&#123;和&#125;是 <span class="keyword">catch</span> 子句语法的一部分，即使该子句只包含一个语句，也不能省略这两个标记。每个 <span class="keyword">try</span> 块都必须至少有一个 <span class="keyword">catch</span> 或 <span class="keyword">finally</span> 子句。如果某个特定异常类未被任何 <span class="keyword">catch</span> 子句处理，该异常将沿着调用栈递归地传播到下一个封闭 <span class="keyword">try</span> 块。如果任何封闭 <span class="keyword">try</span> 块都未捕获到异常，Java 解释器将退出，并显示错误消息和堆栈跟踪信息。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>char</strong></p>
+<ul>
+<li><p>char 是 Java 原始类型。char 变量可以存储一个 Unicode 字符。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> delimiter = <span class="string">';'</span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">可以使用下列 <span class="keyword">char</span> 常量：</span><br><span class="line"></span><br><span class="line">\b-空格</span><br><span class="line">\f-换页</span><br><span class="line">\n-换行</span><br><span class="line">\r-回车</span><br><span class="line">\t-水平制表符</span><br><span class="line">\<span class="string">'-单引号</span></span><br><span class="line"><span class="string">\"-双引号</span></span><br><span class="line"><span class="string">\\-反斜杠</span></span><br><span class="line"><span class="string">\xxx-采用 xxx 编码的 Latin-1 字符。\x 和 \xx 均为合法形式，但可能引起混淆。</span></span><br><span class="line"><span class="string">\uxxxx-采用十六进制编码xxxx的Unicode字符。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Character 类包含一些可用来处理 char 变量的 static 方法，这些方法包括 isDigit()、isLetter()、isWhitespace()和toUpperCase()。char 值没有符号。</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>class</strong></p>
+<ul>
+<li><p>class关键字用来声明新的Java类，该类是相关变量和/或方法的集合。类是面向对象的程序设计方法的基本构造单位。类通常代表某种实际实体，如几何形状或人。类是对象的模板。每个对象都是类的一个实例。要使用类，通常使用new操作符将类的对象实例化，然后调用类的方法来访问类的功能。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> </span>&#123;</span><br><span class="line">	<span class="keyword">float</span> width;</span><br><span class="line">    <span class="keyword">float</span> height;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Rectangle</span><span class="params">(<span class="keyword">float</span> w, <span class="keyword">float</span> h)</span> </span>&#123;</span><br><span class="line">         width = w;</span><br><span class="line">         height = h;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getWidth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         <span class="keyword">return</span> width;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getHeight</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         <span class="keyword">return</span> height;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>continue</strong></p>
+<ul>
+<li><p>continue 关键字用来跳转到 for、while 或 do 循环的下一个迭代。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; max; i++) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(&lt;done with <span class="keyword">this</span> iteration&gt;) &#123;</span><br><span class="line">	<span class="keyword">continue</span>;</span><br><span class="line">&#125;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>default</strong></p>
+<ul>
+<li><p>default 关键字用来标记 switch 语句中的默认分支。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arg = &lt;some value&gt;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(arg) &#123;</span><br><span class="line">	case1:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	case2:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">default</span> 块没有隐式结束点。<span class="keyword">break</span> 语句通常在每个 <span class="keyword">case</span> 或 <span class="keyword">default</span> 块的末尾使用，以便在完成块时退出 <span class="keyword">switch</span> 语句。如果没有 <span class="keyword">default</span> 语句，其参数与任何 <span class="keyword">case</span> 块都不匹配的 <span class="keyword">switch</span> 语句将不执行任何操作。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>do</strong></p>
+<ul>
+<li><p>do 关键字用于指定一个在每次迭代结束时检查其条件的循环。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(!found);</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">do</span> 循环体至少执行一次。条件表达式后面必须有分号。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>double</strong></p>
+<ul>
+<li><p>double 是 Java 原始类型。</p>
+<p>double 变量可以存储双精度浮点值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> ratio = .<span class="number">01</span>;</span><br><span class="line"><span class="keyword">double</span> diameter = <span class="number">6.15</span>;</span><br><span class="line"><span class="keyword">double</span> height = <span class="number">1.35E03</span>;<span class="comment">//1.35*103或1350.0</span></span><br><span class="line"><span class="keyword">double</span> height = <span class="number">1e-2</span>;<span class="comment">//1.0*10-2或0.01</span></span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">由于浮点数据类型是实际数值的近似值，因此，一般不要对浮点数值进行是否相等的比较。Java 浮点数值可代表无穷大和 NaN（非数值）。Double 包装对象类用来定义常量 MIN_VALUE、MAX_VALUE、NEGATIVE_INFINITY、POSITIVE_INFINITY 和 NaN。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>else</strong></p>
+<ul>
+<li><p>else 关键字总是在 if-else 语句中与 if 关键字结合使用。else 子句是可选的，如果 if 条件为 false，则执行该子句。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(condition) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>extends</strong></p>
+<ul>
+<li><p>extends 关键字用在 class 或 interface 声明中，用于指示所声明的类或接口是其名称后跟有 extends关键字的类或接口的子类。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">extends</span> <span class="title">Polygon</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-示例-</span><br><span class="line">在上例中，Rectangle 类继承 Polygon 类的所有 <span class="keyword">public</span> 和 <span class="keyword">protected</span> 变量和方法。Rectangle 类可以重写 Polygon 类的任何非 <span class="keyword">final</span> 方法。一个类只能扩展一个其他类。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>false</strong></p>
+<ul>
+<li><p>false 关键字代表 boolean 变量的两个合法值之一。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> is Complete = <span class="keyword">false</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>final</strong></p>
+<ul>
+<li><p>final 关键字可以应用于类，以指示不能扩展该类（不能有子类）。final 关键字可以应用于方法，以指示不能重写任何子类中的方法。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">MyFinalClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">final</span> String myFinal <span class="title">Method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">一个类不能同时是 <span class="keyword">abstract</span> 又是 <span class="keyword">final</span>。<span class="keyword">abstract</span> 意味着必须扩展类，<span class="keyword">final</span> 意味着不能扩展类。一个方法不能同时是 <span class="keyword">abstract</span> 又是 <span class="keyword">final</span>。<span class="keyword">abstract</span> 意味着必须重写方法，<span class="keyword">final</span> 意味着不能重写方法。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>finally</strong></p>
+<ul>
+<li><p>finally 关键字用来定义始终在 try-catch-finally 语句中执行的块。finally 块通常包含清理代码，用在部分执行 try 块后恢复正常运行。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	&lt;可能引发异常的块&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (&lt;java.lang.Exception或子类&gt;e) &#123;</span><br><span class="line">	&lt;处理异常e的代码&gt;</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">	&lt;有异常或无异常情况下都执行的语句&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">开始和结束标记 &#123; 和 &#125; 是 <span class="keyword">finally</span> 子句语法的一部分，即使该子句只包含一个语句，也不能省略这两个标记。每个 <span class="keyword">try</span> 块都必须至少有一个 <span class="keyword">catch</span> 或 <span class="keyword">finally</span> 子句。如果执行 <span class="keyword">try</span> 块的任何部分，不论是否出现异常，也不论 <span class="keyword">try</span> 或 catc h块是否包含 <span class="keyword">return</span>、<span class="keyword">continue</span> 或 <span class="keyword">break</span> 语句，都一定会执行 <span class="keyword">finally</span> 块中的代码。如果不出现异常，控件将跳过<span class="keyword">try</span>块，进入<span class="keyword">finally</span>块。如果在执行<span class="keyword">try</span>块期间出现异常，并且相应的<span class="keyword">catch</span>块包含 <span class="keyword">break</span>、<span class="keyword">continue</span> 或 <span class="keyword">return</span> 语句，控件将首先穿过 <span class="keyword">finally</span> 块，之后再执行 <span class="keyword">break</span>、<span class="keyword">continue</span> 或 <span class="keyword">return</span>。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>float</strong></p>
+<ul>
+<li><p>float 是Java原始类型。</p>
+<p>float 变量可以存储单精度浮点值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> ratio = .<span class="number">01</span>;</span><br><span class="line"><span class="keyword">float</span> diameter = <span class="number">6.15</span>;</span><br><span class="line"><span class="keyword">float</span> height = <span class="number">1.35E03</span>;<span class="comment">// 1.35*103 或 1350.0</span></span><br><span class="line"><span class="keyword">float</span> height = <span class="number">1e-2</span>;<span class="comment">// 1.0*10-2 或 0.01</span></span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">使用此关键字时应遵循下列规则：Java 中的浮点文字始终默认为双精度。要指定单精度文字值，应在数值后加上 f 或 F，如 <span class="number">0.01f</span>。由于浮点数据类型是实际数值的近似值，因此，一般不要对浮点数值进行是否相等的比较。Java 浮点数值可代表无穷大和 NaN（非数值）。Float 包装对象类用来定义常量MIN_VALUE、MAX_VALUE、NEGATIVE_INFINITY、POSITIVE_INFINITY 和 NaN。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>for</strong></p>
+<ul>
+<li><p>for 关键字用于指定一个在每次迭代结束前检查其条件的循环。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; max; i++) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">for</span> 语句的形式为 <span class="keyword">for</span> (initialize ; condition ; increment)。控件流进入 <span class="keyword">for</span> 语句时，将执行一次 initialize 语句。每次执行循环体之前将计算 condition 的结果。如果 condition 为 <span class="keyword">true</span> ，则执行循环体。每次执行循环体之后，在计算下一个迭代的 condition 之前，将执行 increment 语句。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>if</strong></p>
+<ul>
+<li><p>if 关键字指示有条件地执行代码块。条件的计算结果必须是布尔值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condition) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (condition) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">if</span> 语句可以有可选的 <span class="keyword">else</span> 子句，该子句包含条件为 <span class="keyword">false</span> 时将执行的代码。包含 <span class="keyword">boolean</span> 操作数的表达式只能包含 <span class="keyword">boolean</span> 操作数。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>implements</strong></p>
+<ul>
+<li><p>implements 关键字在 class 声明中使用，以指示所声明的类提供了在 implements 关键字后面的名称所指定的接口中所声明的所有方法的实现。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Truck</span> <span class="keyword">implements</span> <span class="title">IVehicle</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">在上例中，Truck 类必须提供在 IVehicle 接口中所声明的所有方法的实现。否则，Truck 类将是独立的；它可以声明其他方法和变量，并扩展另一个类。一个类可以实现多个接口。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>import</strong></p>
+<ul>
+<li><p>import 关键字使一个包中的一个或所有类在当前 Java 源文件中可见。可以不使用完全限定的类名来引用导入的类。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.net.*;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">当多个包包含同名的类时，许多 Java 程序员只使用特定的 <span class="keyword">import</span> 语句（没有 “*”）来避免不确定性。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>instanceof</strong></p>
+<ul>
+<li><p>instanceof 关键字用来确定对象所属的类。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (node <span class="keyword">instanceof</span> TreeNode) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">在上例中，如果 node 是 TreeNode 类的实例，或者是 TreeNode 的子类的实例，则 <span class="keyword">instanceof</span> 表达式的值将为 <span class="keyword">true</span>。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>int</strong></p>
+<ul>
+<li><p>int 是 Java 原始类型。</p>
+<p>int 变量可以存储 32 位的整数值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> number = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> octalNumber = <span class="number">0377</span>;</span><br><span class="line"><span class="keyword">int</span> hexNumber = <span class="number">0xff</span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">Integer 类是 <span class="keyword">int</span> 原始类型的包装对象类。它定义代表此类型的值的范围的 MIN_VALUE 和 MAX_VALUE 常量。Java 中的所有整数值都是 <span class="number">32</span> 位的 <span class="keyword">int</span> 值，除非值后面有 l或 L（如 <span class="number">235L</span>），这表示该值应解释为 <span class="keyword">long</span>。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>interface</strong></p>
+<ul>
+<li><p>interface 关键字用来声明新的 Java 接口，接口是方法的集合。接口是 Java 语言的一项强大功能。任何类都可声明它实现一个或多个接口，这意味着它实现了在这些接口中所定义的所有方法。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IPolygon</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getArea</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getNumberOfSides</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCircumference</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">实现了接口的任何类都必须提供在该接口中的所有方法的实现。一个类可以实现多个接口。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>long</strong></p>
+<ul>
+<li><p>long 是 Java 原始类型。long 变量可以存储 64 位的带符号整数。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> number = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">long</span> anotherNumber = <span class="number">34590L</span>;</span><br><span class="line"><span class="keyword">long</span> octalNumber = <span class="number">0377</span>;</span><br><span class="line"><span class="keyword">long</span> hexNumber = <span class="number">0xffl</span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">Long 类是 <span class="keyword">long</span> 原始类型的包装对象类。它定义代表此类型的值的范围的 MIN_VALUE 和 MAX_VALUE 常量。Java 中的所有整数值都是 <span class="number">32</span> 位的 <span class="keyword">int</span> 值，除非值后面有 l 或 L（如 <span class="number">235L</span>），这表示该值应解释为 <span class="keyword">long</span>。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>native</strong></p>
+<ul>
+<li><p>native 关键字可以应用于方法，以指示该方法是用 Java 以外的语言实现的。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">native</span> String <span class="title">getProcessorType</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">Native 方法不在此文档的讨论范围内。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>new</strong></p>
+<ul>
+<li><p>new 关键字用于创建类的新实例。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String sName = <span class="keyword">new</span> String();</span><br><span class="line"></span><br><span class="line">Float fVal = <span class="keyword">new</span> Float(<span class="number">0.15</span>);</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">new</span> 关键字后面的参数必须是类名，并且类名的后面必须是一组构造方法参数（必须带括号）。参数集合必须与类的构造方法的签名匹配。= 左侧的变量的类型必须与要实例化的类或接口具有赋值兼容关系。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>null</strong></p>
+<ul>
+<li><p>null 是 Java 的保留字，表示无值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Integer i;</span><br><span class="line"></span><br><span class="line">i = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">String s;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (s != <span class="keyword">null</span>) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">将 <span class="keyword">null</span> 赋给非原始变量相当于释放该变量先前所引用的对象。不能将 <span class="keyword">null</span> 赋给原始类型 （<span class="keyword">byte</span>、<span class="keyword">short</span>、<span class="keyword">int</span>、<span class="keyword">long</span>、<span class="keyword">char</span>、<span class="keyword">float</span>、<span class="keyword">double</span>、<span class="keyword">boolean</span>）变量。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>package</strong></p>
+<ul>
+<li><p>package 关键字指定在 Java 源文件中声明的类所驻留的 Java 包。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.mycompany;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">package</span> 语句（如果出现）必须是 Java 源文件中的第一个非-注释-性文本。在上面的-示例-中，MyClass 类的完全限定类名是 com.mycompany.MyClass。如果 Java 源文件不包含 <span class="keyword">package</span> 语句，在该文件中定义的类将位于“默认包”中。请注意，不能从非默认包中的类引用默认包中的类。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>private</strong></p>
+<ul>
+<li><p>private 关键字是访问控制修饰符，可以应用于类、方法或字段（在类中声明的变量）。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPublicClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPrivateClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> String <span class="title">myMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">只能在声明 <span class="keyword">private</span>（内部）类、方法或字段的类中引用这些类、方法或字段。在类的外部或者对于子类而言，它们是不可见的。所有类成员的默认访问范围都是 <span class="keyword">package</span> 访问，也就是说，除非存在特定的访问控制修饰符，否则，可以从同一个包中的任何类访问类成员。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>protected</strong></p>
+<ul>
+<li><p>protected 关键字是可以应用于类、方法或字段（在类中声明的变量）的访问控制修饰符。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPublicClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">protected</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPrivateClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">protected</span> <span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> String <span class="title">myMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">可以在声明 <span class="keyword">protected</span> 类、方法或字段的类、同一个包中的其他任何类以及任何子类（无论子类是在哪个包中声明的）中引用这些类、方法或字段。所有类成员的默认访问范围都是 <span class="keyword">package</span> 访问，也就是说，除非存在特定的访问控制修饰符，否则，可以从同一个包中的任何类访问类成员</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>public</strong></p>
+<ul>
+<li><p>public 关键字是可以应用于类、方法或字段（在类中声明的变量）的访问控制修饰符。</p>
+</li>
+<li><p>示例</p>
+<ul>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPublicClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPrivateClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">myMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">可能只会在其他任何类或包中引用 <span class="keyword">public</span> 类、方法或字段。所有类成员的默认访问范围都是 <span class="keyword">package</span> 访问，也就是说，除非存在特定的访问控制修饰符，否则，可以从同一个包中的任何类访问类成员。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>return</strong></p>
+<ul>
+<li><p>return 关键字会导致方法返回到调用它的方法，从而传递与返回方法的返回类型匹配的值。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myVoidMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">myStringMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	String s = <span class="string">"myresponse"</span>;</span><br><span class="line">	returns;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">myIntMethod</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">5</span>;</span><br><span class="line">	<span class="keyword">return</span>(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"></span><br><span class="line">如果方法具有非 <span class="keyword">void</span> 的返回类型，<span class="keyword">return</span> 语句必须具有相同或兼容类型的参数。返回值两侧的括号是可选的。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>short</strong></p>
+<ul>
+<li><p>short 是 Java 原始类型。short 变量可以存储 16 位带符号的整数。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> number = <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">short</span> octalNumber = <span class="number">0077</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">short</span> hexNumber = <span class="number">0xff</span>;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">Short 类是 <span class="keyword">short</span> 原始类型的包装对象类。它定义代表此类型的值的范围的 MIN_VALUE 和 MAX_VALUE 常量。Java 中的所有整数值都是 <span class="number">32</span> 位的 <span class="keyword">int</span> 值，除非值后面有 l 或 L（如 <span class="number">235L</span>），这表示该值应解释为 <span class="keyword">long</span>。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>static</strong></p>
+<ul>
+<li><p>static 关键字可以应用于内部类（在另一个类中定义的类）、方法或字段（类的成员变量）。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyPublicClass</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> <span class="keyword">int</span> MAX_OBJECTS = <span class="number">100</span>;</span><br><span class="line">	<span class="keyword">static</span> int_numObjects = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">MyStaticClass</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getNumObjects</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"></span><br><span class="line">通常，<span class="keyword">static</span> 关键字意味着应用它的实体在声明该实体的类的任何特定实例外部可用。<span class="keyword">static</span>（内部）类可以被其他类实例化和引用（即使它是顶级类）。在上面的-示例-中，另一个类中的代码可以实例化 MyStaticClass 类，方法是用包含它的类名来限定其名称，如 MyClass.MyStaticClass。<span class="keyword">static</span> 字段（类的成员变量）在类的所有实例中只存在一次。可以从类的外部调用 <span class="keyword">static</span> 方法，而不用首先实例化该类。这样的引用始终包括类名作为方法调用的限定符。在上面的示例中，MyClass 类外部的代码以MyClass.getNumObjects() 的形式调用 getNumObjects()<span class="keyword">static</span> 方法。模式：</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> &lt;type&gt;varName = &lt;value&gt;;</span><br><span class="line"></span><br><span class="line">通常用于声明可以在类的外部使用的类常量。在引用这样的类常量时需要用类名加以限定。在上面的-示例-中，另一个类可以用 MyClass.MAX_OBJECTS 形式来引用 MAX_OBJECTS 常量。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>super</strong></p>
+<ul>
+<li><p>super 关键字用于引用使用该关键字的类的超类。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyClass</span><span class="params">(Stringarg)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(arg);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">myStringMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">super</span>.<span class="function">other String <span class="title">Method</span><span class="params">()</span></span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">作为独立语句出现的 <span class="keyword">super</span> 表示调用超类的构造方法。<span class="keyword">super</span>.&lt;methodName&gt;() 表示调用超类的方法。只有在如下情况中才需要采用这种用法：要调用在该类中被重写的方法，以便指定应当调用在超类中的该方法。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>switch</strong></p>
+<ul>
+<li><p>switch 语句用于基于某个表达式选择执行多个代码块中的某一个。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arg = &lt;some value&gt;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(arg) &#123;</span><br><span class="line">	case1:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	case2:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> arg = &lt;some value&gt;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(arg) &#123;</span><br><span class="line">	<span class="keyword">case</span><span class="string">'y'</span>:</span><br><span class="line"></span><br><span class="line">	<span class="keyword">case</span><span class="string">'Y'</span>:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">case</span><span class="string">'n'</span>:</span><br><span class="line"></span><br><span class="line">	<span class="keyword">case</span><span class="string">'N'</span>:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">switch</span> 条件的计算结果必须等于 <span class="keyword">byte</span>、<span class="keyword">char</span>、<span class="keyword">short</span> 或 <span class="keyword">int</span>，jdk1.7 后可以是 String 类型。<span class="keyword">case</span> 块没有隐式结束点。<span class="keyword">break</span> 语句通常在每个 <span class="keyword">case</span> 块末尾使用，用于退出 <span class="keyword">switch</span> 语句。如果没有 <span class="keyword">break</span> 语句，执行流将进入所有后面的 <span class="keyword">case</span> 和 / 或 <span class="keyword">default</span> 块。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>synchronized</strong></p>
+<ul>
+<li><p>synchronized 关键字可以应用于方法或语句块，并为一次只应由一个线程执行的关键代码段提供保护。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> String <span class="title">mySyncStaticMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> String <span class="title">mySyncMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyOtherClass</span> </span>&#123;</span><br><span class="line">	Object someObj;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">myMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">synchronized</span>(someObj) &#123;</span><br><span class="line">			&lt;statement saffectingsomeObj&gt;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">synchronized</span> 关键字可防止代码的关键代码段一次被多个线程执行。如果应用于静态方法（如上例中的 MySyncStaticMethod），那么，当该方法一次由一个线程执行时，整个类将被锁定。如果应用于实例方法（如上例中的 MySyncMethod ），那么，当该方法一次由一个线程访问时，该实例将被锁定。如果应用于对象或数组，当关联的代码块一次由一个线程执行时，对象或数组将被锁定。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>this</strong></p>
+<ul>
+<li><p>this 关键字用于引用当前实例。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> number;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyClass</span><span class="params">(intnumber)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.number = number;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">当引用可能不明确时，可以使用 <span class="keyword">this</span> 关键字来引用当前的实例。在上面的-示例-中，构造方法参数number 与类的成员变量同名。<span class="keyword">this</span>.number 明确表示 MyClass 的该实例的 number 成员变量。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>throw</strong></p>
+<ul>
+<li><p>throw 关键字用于引发异常。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> method <span class="title">readFile</span><span class="params">(Stringfilename)</span><span class="keyword">throws</span> IO Exception </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (error) &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">IO <span class="title">Exception</span><span class="params">(<span class="string">"errorreadingfile"</span>)</span></span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">throw</span> 语句将 java.lang.Throwable 作为参数。Throwable 在调用栈中向上传播，直到被适当的 <span class="keyword">catch</span> 块捕获。引发非 RuntimeException 异常的任何方法还必须在方法声明中使用 <span class="keyword">throws</span> 修饰符来声明它引发的异常。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>throws</strong></p>
+<ul>
+<li><p>throws 关键字可以应用于方法，以便指出方法引发了特定类型的异常。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> method <span class="title">readFile</span><span class="params">(Stringfilename)</span>throwsIOException </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (error) &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">IO <span class="title">Exception</span><span class="params">(<span class="string">"errorreadingfile"</span>)</span></span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">throws</span> 关键字将逗号分隔的 java.lang.Throwables 列表作为参数。引发非 RuntimeException异 常的任何方法还必须在方法声明中使用 <span class="keyword">throws</span> 修饰符来声明它引发的异常。要在 <span class="keyword">try</span>-<span class="keyword">catch</span> 块中包含带 <span class="keyword">throws</span> 子句的方法的调用，必须提供该方法的调用者。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>transient</strong></p>
+<ul>
+<li><p>transient 关键字可以应用于类的成员变量，以便指出该成员变量不应在包含它的类实例已序列化时被序列化。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">transient</span> String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>try</strong></p>
+<ul>
+<li><p>try 关键字用于包含可能引发异常的语句块。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	&lt;可能引发异常的块&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (&lt;java.lang.Exception或子类&gt;e) &#123;</span><br><span class="line">	&lt;处理异常e的代码&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	&lt;可能引发其他异常的块&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (FooExceptione) &#123;</span><br><span class="line">	&lt;处理FooExceptione的代码&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (BarExceptione) &#123;</span><br><span class="line">	&lt;处理BarExceptione的代码&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	&lt;可能引发异常的块&gt;</span><br><span class="line">&#125; <span class="keyword">catch</span> (&lt;java.lang.Exception或子类&gt;e) &#123;</span><br><span class="line">	&lt;处理异常e的代码&gt;</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">	&lt;有异常或无异常情况下都执行的语句&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line">每个 <span class="keyword">try</span> 块都必须至少有一个 <span class="keyword">catch</span> 或 <span class="keyword">finally</span> 子句。如果某个特定异常类未被任何 <span class="keyword">catch</span> 子句处理，该异常将沿着调用栈递归地传播到下一个封闭 <span class="keyword">try</span> 块。如果任何封闭 <span class="keyword">try</span> 块都未捕获到异常，Java 解释器将退出，并显示错误消息和堆栈跟踪信息。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>true</strong></p>
+<ul>
+<li><p>true 关键字表示 boolean 变量的两个合法值中的一个。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> Complete = <span class="keyword">true</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>void</strong></p>
+<ul>
+<li><p>void 关键字表示 null 类型。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="keyword">do</span> <span class="title">Something</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&lt;statements&gt;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">void</span> 可以用作方法的返回类型，以指示该方法不返回值。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>volatile</strong></p>
+<ul>
+<li><p>volatile 关键字用于表示可以被多个线程异步修改的成员变量。</p>
+<p>注意：volatile 关键字在许多 Java 虚拟机中都没有实现。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="keyword">volatile</span> <span class="keyword">int</span> shared Value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-注释-</span><br><span class="line"><span class="keyword">volatile</span> 的目标用途是为了确保所有线程所看到的指定变量的值都是相同的。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>while</strong></p>
+<ul>
+<li><p>while 关键字用于指定一个只要条件为真就会重复的循环。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (!found) &#123;</span><br><span class="line">	&lt;statements&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java-关键字/" rel="tag"><i class="fa fa-tag"></i> java 关键字</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/28/Java 正则表达式整理/" rel="next" title="Java 正则表达式整理">
+                <i class="fa fa-chevron-left"></i> Java 正则表达式整理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="Simplation.WANG">
+          <p class="site-author-name" itemprop="name">Simplation.WANG</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Simplation" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://mail.google.com/mail/simplationwang@gmail.com" target="_blank" title="Gmail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      Gmail
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://weibo.com/3196580297/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-关键字"><span class="nav-text">Java 关键字</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simplation.WANG</span>
+</div>
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("BVrf3pTXj8EGBxA5GqyHYq6R-gzGzoHsz", "Yi1oS90pBwdGYW3CdhopNPc2");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.2"></script>
+
+
+  
+
+</body>
+</html>
+
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
