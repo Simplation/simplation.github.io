@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-14T14:41:04.321Z</updated>
+  <updated>2020-01-15T13:52:35.516Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dart 系列教程之环境搭建</title>
+    <link href="http://yoursite.com/2020/01/15/Dart%20%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2020/01/15/Dart 系列教程之环境搭建/</id>
+    <published>2020-01-15T13:50:19.000Z</published>
+    <updated>2020-01-15T13:52:35.516Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Dart-系列教程之环境搭建"><a href="#Dart-系列教程之环境搭建" class="headerlink" title="Dart 系列教程之环境搭建"></a>Dart 系列教程之环境搭建</h3><h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><p>个人的开发环境基于 IntelliJ IDEA 来搭建，所以这篇文章是以 IntelliJ IDEA 为例。</p><ol><li>下载 SDK 并配置环境变量。</li><li>安装 Dart 插件。</li><li>配置已安装的 SDK 插件路径。</li></ol><h6 id="下载-SDK-并配置环境变量"><a href="#下载-SDK-并配置环境变量" class="headerlink" title="下载 SDK 并配置环境变量"></a>下载 SDK 并配置环境变量</h6><ul><li>Dart SDK 下载地址：<a href="https://dart.dev/get-dart" target="_blank" rel="noopener">Dart SDK 下载</a>，支持 Windows、Linux、Mac 三大平台的安装。<ul><li>Windows</li><li>Linux</li><li>Mac</li></ul></li></ul><p>注：这里需要额外说明一下，不建议使用命令安装 SDK，建议使用如下链家安装：<a href="https://www.gekorm.com/dart-windows" target="_blank" rel="noopener">https://www.gekorm.com/dart-windows</a></p><ul><li><p>配置环境变量</p><p>我的电脑 –&gt; 属性 –&gt; 高级系统设置 –&gt; 环境变量 –&gt;  Path 添加已安装的 SDK 路径（E:\Dart\dart-sdk\bin） –&gt; 保存</p></li></ul><h6 id="安装-Dart-插件"><a href="#安装-Dart-插件" class="headerlink" title="安装 Dart 插件"></a>安装 Dart 插件</h6><p>打开 IDEA, File -&gt; Settings -&gt; Plugins,搜索 Dart 点击安装完成后，重新启动 IDEA 。</p><h6 id="配置已安装的-SDK-插件路径"><a href="#配置已安装的-SDK-插件路径" class="headerlink" title="配置已安装的 SDK 插件路径"></a>配置已安装的 SDK 插件路径</h6><ul><li><p>选择新建项目类型并设置已安装 SDK 的路径</p><p>![配置 SDK 路径](D:\Work\github_file\SimplationWANGBlogs\source\dart source\配置 SDK 路径.png)</p></li><li><p>设置项目名称和路径</p><p>![设置项目名称和路径](D:\Work\github_file\SimplationWANGBlogs\source\dart source\设置项目名称和路径.png)</p></li><li><p>点击 Finish 然后就可以愉快的玩耍。</p></li></ul><p>至此，Dart 环境搭建就结束了，如有任何问题，欢迎交流和指正。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Dart-系列教程之环境搭建&quot;&gt;&lt;a href=&quot;#Dart-系列教程之环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Dart 系列教程之环境搭建&quot;&gt;&lt;/a&gt;Dart 系列教程之环境搭建&lt;/h3&gt;&lt;h4 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环
+      
+    
+    </summary>
+    
+      <category term="Dart" scheme="http://yoursite.com/categories/Dart/"/>
+    
+    
+      <category term="Dart" scheme="http://yoursite.com/tags/Dart/"/>
+    
+      <category term="开发环境搭建" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 关键字整理.md</title>
