@@ -121,7 +121,7 @@
 <meta name="description" content="Do what you want to see.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Simplation.WANG&#39;s Blogs">
-<meta property="og:url" content="http://yoursite.com/tags/汇总/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
 <meta property="og:site_name" content="Simplation.WANG&#39;s Blogs">
 <meta property="og:description" content="Do what you want to see.">
 <meta property="og:locale" content="zh-Hans">
@@ -156,13 +156,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/汇总/">
+  <link rel="canonical" href="http://yoursite.com/archives/page/2/">
 
 
 
 
 
-  <title>标签: 汇总 | Simplation.WANG's Blogs</title>
+  <title>归档 | Simplation.WANG's Blogs</title>
   
 
 
@@ -276,7 +276,7 @@ $(function() {
     <canvas id="canvas"></canvas>
   </div>
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -415,15 +415,33 @@ $(function() {
   
   
   
-  <div class="post-block tag">
-
+  <div class="post-block archive">
     <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>汇总<small>标签</small>
-        </h2>
-      </div>
+      <span class="archive-move-on"></span>
+
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 21 篇日志。 继续努力。
+      </span>
 
       
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+          </div>
+        
+        
+
         
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -431,17 +449,17 @@ $(function() {
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2019/06/04/Android 中常见问题汇总/" itemprop="url">
+            <a class="post-title-link" href="/2016/05/24/关于友盟的第三方登录、分享的流程实现/" itemprop="url">
               
-                <span itemprop="name">Android 中常见问题汇总(附解决办法)</span>
+                <span itemprop="name">关于友盟的第三方登录、分享的流程实现</span>
               
             </a>
         
       </h3>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-04T19:47:04+08:00" content="2019-06-04">
-          06-04
+        <time class="post-time" itemprop="dateCreated" datetime="2016-05-24T22:39:58+08:00" content="2016-05-24">
+          05-24
         </time>
       </div>
 
@@ -449,15 +467,21 @@ $(function() {
   </article>
 
 
-      
-    </div>
 
+      
+
+    </div>
   </div>
   
   
   
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
 
 
           </div>
@@ -729,10 +753,12 @@ $(function() {
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
   
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 
